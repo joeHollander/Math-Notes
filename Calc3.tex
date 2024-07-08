@@ -1,0 +1,45 @@
+\documentclass{article}
+\begin{document}
+Dot product: 
+\[a \cdot b = |a||b|cos(\theta)\]
+Cross product:
+To find the cross product of a and b find the
+determinant of 3x3 matrix with unit vectors: $\mathbf{i, j, k}$
+for the first row.
+\[|a \times  b| = |a|b|sin(\theta) \]
+Vector equation of a line starting at point $P$, $(a, b, c)$, 
+with parralel vector $\vec{v}$, $\left\langle d, e, f\right\rangle$,
+and paramater $t$:
+\[
+r(t) = P + t\vec{v} = 
+\left\langle a + dt, b + et, c + ft\right\rangle
+\]
+Given a constant point $P_0$, $(x_0,y_0,z_0)$
+and a point on the plane $P$, $(x,y,z)$, 
+the vector $\vec{P_0P}$ must be orthogonal to the normal vector of the plane $N$, 
+$\left\langle a, b, c \right\rangle$.
+Therefore, \[N \cdot \vec{P_0P} = 0 \]
+and \[a(x-x_0) + b(y-y_0) + c(z-z_0) = 0\].
+
+Given vector function $r(t) = \left\langle f(t), g(t), h(t) \right\rangle$,
+\[r'(t) = \left\langle f'(t), g'(t), h'(t) \right\rangle\] and 
+\[R(t) = \left\langle F(t), G(t), H(t) \right\rangle\]
+
+Length of curve from a to b is: \[\int_{a}^{b} |r'(t)| dt\],
+\[s(t) = \int_{0}^{t} |r'(x)| dx\]. An equation $y = f(x)$ can be paramaterized as
+$r(t) = \left\langle t, f(t) \right\rangle$. The unit tangent vector: $T(t) = r'(t)/|r'(t)|$.
+The principle unit normal vector: $N(t) = T'(t)/|T'(t)|$.
+The binomial vector: $B = T \times N$. The osculating plane is
+the one formed by $T$ and $N$. Curvature:
+\[
+\kappa(x) = |\frac{dT}{ds}| = \frac{|T'(t)|}{|r'(t)|} 
+= \frac{|r'(t) \times r''(t)|}{|r'(t)|^3}
+\].
+Torsion:
+\[
+\gamma(x) = -N \cdot \frac{dB}{ds} 
+= \frac{(r'(t) \times r''(t)) * r'''(t)}{|r'(t) \cdot r''(t)|}
+\]
+
+
+\end{document}
