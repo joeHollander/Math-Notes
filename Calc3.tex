@@ -1,45 +1,136 @@
 \documentclass{article}
+\usepackage{graphicx}
+
+\title{Calculus 3 notes}
+\author{Joe Hollander}
+\date{Summer 2024}
+
 \begin{document}
-Dot product: 
-\[a \cdot b = |a||b|cos(\theta)\]
+\maketitle
+
+\newtheorem{theorem}{Theorem}[section]
+
+\section*{Vector Functions}
+\noindent Dot product: 
+\[a \cdot b = |a||b|cos(\theta).\]
 Cross product:
 To find the cross product of a and b find the
 determinant of 3x3 matrix with unit vectors: $\mathbf{i, j, k}$
-for the first row.
-\[|a \times  b| = |a|b|sin(\theta) \]
-Vector equation of a line starting at point $P$, $(a, b, c)$, 
+for the first row. Additionally: 
+\[|a \times  b| = |a|b|sin(\theta).\]
+
+\noindent The vector equation of a line starting at point $P$, $(a, b, c)$, 
 with parralel vector $\vec{v}$, $\left\langle d, e, f\right\rangle$,
 and paramater $t$:
 \[
 r(t) = P + t\vec{v} = 
-\left\langle a + dt, b + et, c + ft\right\rangle
+\left\langle a + dt, b + et, c + ft\right\rangle.
 \]
-Given a constant point $P_0$, $(x_0,y_0,z_0)$
+Given a constant point on the plane $P_0$, $(x_0,y_0,z_0)$
 and a point on the plane $P$, $(x,y,z)$, 
 the vector $\vec{P_0P}$ must be orthogonal to the normal vector of the plane $N$, 
 $\left\langle a, b, c \right\rangle$.
-Therefore, \[N \cdot \vec{P_0P} = 0 \]
-and \[a(x-x_0) + b(y-y_0) + c(z-z_0) = 0\].
+Therefore, \[N \cdot \vec{P_0P} = 0, \]
+and \[a(x-x_0) + b(y-y_0) + c(z-z_0) = 0.\]
 
-Given vector function $r(t) = \left\langle f(t), g(t), h(t) \right\rangle$,
-\[r'(t) = \left\langle f'(t), g'(t), h'(t) \right\rangle\] and 
-\[R(t) = \left\langle F(t), G(t), H(t) \right\rangle\]
+\noindent Given vector function $r(t) = \left\langle f(t), g(t), h(t) \right\rangle$,
+\[r'(t) = \left\langle f'(t), g'(t), h'(t) \right\rangle,\] and 
+\[R(t) = \left\langle F(t), G(t), H(t) \right\rangle.\]
 
-Length of curve from a to b is: \[\int_{a}^{b} |r'(t)| dt\],
-\[s(t) = \int_{0}^{t} |r'(x)| dx\]. An equation $y = f(x)$ can be paramaterized as
+\noindent Length of curve from a to b is: \[\int_{a}^{b} |r'(t)| dt,\]
+\[s(t) = \int_{0}^{t} |r'(x)| dx.\] An equation $y = f(x)$ can be paramaterized as
 $r(t) = \left\langle t, f(t) \right\rangle$. The unit tangent vector: $T(t) = r'(t)/|r'(t)|$.
 The principle unit normal vector: $N(t) = T'(t)/|T'(t)|$.
 The binomial vector: $B = T \times N$. The osculating plane is
-the one formed by $T$ and $N$. Curvature:
+the one formed by $T$ and $N$. 
+Curvature:
 \[
-\kappa(x) = |\frac{dT}{ds}| = \frac{|T'(t)|}{|r'(t)|} 
+\kappa(x) = |\frac{dT}{ds}| = \frac{|T'(t)|}{|r'(t)|}
 = \frac{|r'(t) \times r''(t)|}{|r'(t)|^3}
-\].
+\]
 Torsion:
 \[
-\gamma(x) = -N \cdot \frac{dB}{ds} 
-= \frac{(r'(t) \times r''(t)) * r'''(t)}{|r'(t) \cdot r''(t)|}
+\tau(x) = -N \cdot \frac{dB}{ds} 
+= \frac{(r'(t) \times r''(t)) \cdot r'''(t)}{|r'(t) \cdot r''(t)|}.
 \]
+
+Working backwords from an acceleration vector, $\vec{a}$,
+we can derive a position vector function of an object affected 
+by gravity.
+\[\vec{a} = \left\langle0, -9.8\right\rangle.\]
+Given an initial velocity vector, $\vec{v_0}$ with speed, $s$,
+and angle, $\alpha$: 
+\[\vec{v_0} = \left\langle s\cos(\alpha), s\sin(\alpha)\right\rangle,\]
+\[v(t) = \left\langle s\cos(\alpha), -9.8t + s\sin(\alpha)\right\rangle,\]
+and
+\[r(t) = \left\langle s\cos(\alpha)t, -4.9t^2 + s\sin(\alpha)t\right\rangle,\]
+\[x = s\cos(\alpha)t, y = -4.9t^2 + s\sin(\alpha)t\].
+
+\section*{Partial Derivatives}\
+\
+\noindent Domain for a function of two variables can be written as: 
+\[D = \{(x,y)\:|\: x + y != 2, xy < -1\}.\]
+Similar to contour drawings on maps, level curves of a function $f$ of two variables
+are the curves with equations $f(x,y) = k$ where $k$ is a constant. 
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{LevelCurves.png}
+\end{center}
+Functions of three variables are the same as functions of two variables.
+Functions of multiple variables can be packaged into a function of one vector
+variable. For multi variable limits, the notation is:
+\[\lim_{(x,y)\to (a,b)}f(x,y) = L.\]
+Since the limit of a multi variable function can be approached from any way,
+the definition of what makes a limit not exist has to be redefined. If 
+$f(x,y) \to L_1$ as $(x,y) \to (a,b)$ along a path $C_1$ and $f(x,y) \to L_2$ as
+$(x,y) \to (a,b)$ along a path $C_2$ and $L_1 \neq L_2$, then $\lim_{(x,y)\to (a,b)}f(x,y)$
+does not exist. The easiest paths to evaluate are often the x and y-axis. 
+If evaluating on the x-axis (or y-axis) substitute in $y=b$ (or $x=a$) and then solve
+\[\lim_{(x,y) \to (a, b)} f(x,b),\] or \[\lim_{(x,y) \to (a, b)} f(a,y).\] 
+Substituting in $y = mx$ is also an easy path to evaluate. A polynomial function of two variables
+is in the form: \[f(x,y) = cx^n y^n.\] A rational polynomial is the ratio of two polynomials.
+Since a polynomial is continous everywhere, a polynomial $p$ has the property:
+\[\lim_{(x,y) \to (a,b)} p(x,y) = p(a,b).\]
+Similarly a rational function $q$ has the same property provided $r(a,b) \neq 0$:
+\[\lim_{(x,y) \to (a,b)} q(x,y) = \frac{p(a,b)}{r(a,b)} = q(a,b).\]
+Squeeze theorem applies to multivariable functions also. Additionally,
+the epsilon-delta definition of a limit is useful in proving that the limit is a value.
+The definition states that for every $\epsilon > 0$ there exists a $\delta > 0$. 
+$\delta$ bounds the domain such that:
+\[0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta,\]
+and $\epsilon$ bounds the range such that: \[|f(x,y) - L| < \epsilon.\]
+It's often easiest to start with the epsilon inequality first,
+and finding a relation between delta and epsilon such as $\delta = \epsilon/3$
+completes the proof. The epsilon-delta definition extends to vector functions:
+\[0 < |\vec{x} - \vec{a}| < \delta, \] and
+\[|f(\vec{x}) - L| < \epsilon.\]
+A multivariable function is defined as continous if
+\[\lim{(x,y) \to (a,b) f(x,y) = f(a,b)}.\] 
+If two functions $f$ and $g$ are continuous then their composition function
+$h = f \: \circ g = f(g(x,y))$ is also continous. Fix $y=b$ so that $g(x)=f(x,b)$.
+The derivative of $f$ with respect to $x$ at $a$ is denoted by:
+\[g'(a) = f_x(a,b) = \frac{\partial f}{\partial x}.\] Therefore, the limit definition becomes:
+\[f_x(a,b) = \lim_{h \to 0}\frac{f(a+h,b) - f(a,b)}{h},\]
+or \[f_y(a,b) = \lim_{h \to 0}\frac{f(a,b+h) - f(a,b)}{h}.\]
+
+\noindent Visually: 
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{PartialDerivative.png}
+\end{center}
+
+When implicity differentiating equations with respect to $x$ such as:
+\[x^3 + y^3 + z^3 + 6xyz = 0,\] where $z = f(x,y)$. Treat $y$ as a constant and $z$
+as a function of $x$. Therefore, the derivative would be:
+\[3x^2 + 3z^2\frac{\partial z}{\partial x} + 6yz + 6xy\frac{\partial z}{\partial x} = 0.\]
+Partial derivatives of functions of three variables are the same. Second order
+partial derivatives are denoted as:
+\[(f_x)_x = \frac{\partial^2 f}{\partial x^2},\]
+and partial derivatives of order $n$ are denoted as:
+\[\frac{\partial^n f}{\partial x^n }.\]
+Clairaut's theorem states that if $f$ is defined on a domain disk $D$ that contains
+the point $(a,b)$ then
+\[f_{xy}(a,b) = f_{yx}(a,b).\]
+
+
 
 
 \end{document}
