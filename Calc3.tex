@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{physics}
 
 \title{Calculus 3 notes}
 \author{Joe Hollander}
@@ -19,27 +20,31 @@ determinant of 3x3 matrix with unit vectors: $\mathbf{i, j, k}$
 for the first row. Additionally: 
 \[|a \times  b| = |a|b|sin(\theta).\]
 
-\noindent The vector equation of a line starting at point $P$, $(a, b, c)$, 
+The vector equation of a line starting at point $P$, $(a, b, c)$, 
 with parralel vector $\vec{v}$, $\left\langle d, e, f\right\rangle$,
 and paramater $t$:
 \[
 r(t) = P + t\vec{v} = 
 \left\langle a + dt, b + et, c + ft\right\rangle.
 \]
+
 Given a constant point on the plane $P_0$, $(x_0,y_0,z_0)$
 and a point on the plane $P$, $(x,y,z)$, 
 the vector $\vec{P_0P}$ must be orthogonal to the normal vector of the plane $N$, 
-$\left\langle a, b, c \right\rangle$.
+$\left\langle A,B,C \right\rangle$.
 Therefore, \[N \cdot \vec{P_0P} = 0, \]
-and \[a(x-x_0) + b(y-y_0) + c(z-z_0) = 0.\]
+and \[A(x-x_0) + B(y-y_0) + C(z-z_0) = 0.\]
 
-\noindent Given vector function $r(t) = \left\langle f(t), g(t), h(t) \right\rangle$,
+Given vector function $r(t) = \left\langle f(t), g(t), h(t) \right\rangle$,
 \[r'(t) = \left\langle f'(t), g'(t), h'(t) \right\rangle,\] and 
 \[R(t) = \left\langle F(t), G(t), H(t) \right\rangle.\]
 
-\noindent Length of curve from a to b is: \[\int_{a}^{b} |r'(t)| dt,\]
+
+Length of curve from a to b is: \[\int_{a}^{b} |r'(t)| dt,\]
 \[s(t) = \int_{0}^{t} |r'(x)| dx.\] An equation $y = f(x)$ can be paramaterized as
-$r(t) = \left\langle t, f(t) \right\rangle$. The unit tangent vector: $T(t) = r'(t)/|r'(t)|$.
+$r(t) = \left\langle t, f(t) \right\rangle$. 
+
+The unit tangent vector: $T(t) = r'(t)/|r'(t)|$.
 The principle unit normal vector: $N(t) = T'(t)/|T'(t)|$.
 The binomial vector: $B = T \times N$. The osculating plane is
 the one formed by $T$ and $N$. 
@@ -67,17 +72,19 @@ and
 \[x = s\cos(\alpha)t, y = -4.9t^2 + s\sin(\alpha)t\].
 
 \section*{Partial Derivatives}\
-\
-\noindent Domain for a function of two variables can be written as: 
+
+Domain for a function of two variables can be written as: 
 \[D = \{(x,y)\:|\: x + y != 2, xy < -1\}.\]
 Similar to contour drawings on maps, level curves of a function $f$ of two variables
 are the curves with equations $f(x,y) = k$ where $k$ is a constant. 
 \begin{center}
     \includegraphics[width=12cm,height=12cm, keepaspectratio]{LevelCurves.png}
 \end{center}
-Functions of three variables are the same as functions of two variables.
-Functions of multiple variables can be packaged into a function of one vector
-variable. For multi variable limits, the notation is:
+Functions of three variables are the same as functions of two variables and
+functions of multiple variables can be packaged into a function of one vector
+variable. 
+
+For multivariable limits, the notation is:
 \[\lim_{(x,y)\to (a,b)}f(x,y) = L.\]
 Since the limit of a multi variable function can be approached from any way,
 the definition of what makes a limit not exist has to be redefined. If 
@@ -103,12 +110,13 @@ and finding a relation between delta and epsilon such as $\delta = \epsilon/3$
 completes the proof. The epsilon-delta definition extends to vector functions:
 \[0 < |\vec{x} - \vec{a}| < \delta, \] and
 \[|f(\vec{x}) - L| < \epsilon.\]
+
 A multivariable function is defined as continous if
 \[\lim{(x,y) \to (a,b) f(x,y) = f(a,b)}.\] 
 If two functions $f$ and $g$ are continuous then their composition function
 $h = f \: \circ g = f(g(x,y))$ is also continous. Fix $y=b$ so that $g(x)=f(x,b)$.
 The derivative of $f$ with respect to $x$ at $a$ is denoted by:
-\[g'(a) = f_x(a,b) = \frac{\partial f}{\partial x}.\] Therefore, the limit definition becomes:
+\[g'(a) = f_x(a,b).\] Therefore, the limit definition becomes:
 \[f_x(a,b) = \lim_{h \to 0}\frac{f(a+h,b) - f(a,b)}{h},\]
 or \[f_y(a,b) = \lim_{h \to 0}\frac{f(a,b+h) - f(a,b)}{h}.\]
 
@@ -120,15 +128,65 @@ or \[f_y(a,b) = \lim_{h \to 0}\frac{f(a,b+h) - f(a,b)}{h}.\]
 When implicity differentiating equations with respect to $x$ such as:
 \[x^3 + y^3 + z^3 + 6xyz = 0,\] where $z = f(x,y)$. Treat $y$ as a constant and $z$
 as a function of $x$. Therefore, the derivative would be:
-\[3x^2 + 3z^2\frac{\partial z}{\partial x} + 6yz + 6xy\frac{\partial z}{\partial x} = 0.\]
+\[3x^2 + 3z^2\pdv{z}{x} + 6yz + 6xy\pdv{z}{x} = 0.\]
 Partial derivatives of functions of three variables are the same. Second order
 partial derivatives are denoted as:
-\[(f_x)_x = \frac{\partial^2 f}{\partial x^2},\]
+\[(f_x)_x = \pdv[2]{f}{x},\]
 and partial derivatives of order $n$ are denoted as:
-\[\frac{\partial^n f}{\partial x^n }.\]
+\[\pdv[n]{f}{x}.\]
 Clairaut's theorem states that if $f$ is defined on a domain disk $D$ that contains
 the point $(a,b)$ then
 \[f_{xy}(a,b) = f_{yx}(a,b).\]
+
+Tangent plane contains both tangent lines from the derivative with respect to $x$
+and the derivative with respect to $y$.  
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{TangentPlane.png}
+\end{center}
+
+Another equation of a plane is:
+\[z-z_0=a(x-x_0) + b(y-y_0),\]
+where $a = -A/C$ and $b = -B/C$. Remember the normal vector:
+ $N = \left\langle A, B, C \right\rangle.$ Since setting $y=y_0$ or
+ $x=x_0$ represents the tangent line in the $x$ or $y$ plane respectively, 
+ the equation of a tangent plane given the derivatives with respect to $x$ and $y$
+ at the point $(x_0, y_0, z_0)$ is: 
+ \[z-z_0 = f_x(x_0, y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0).\]
+ This equation can be used to 
+ approximate $z$ close to $(x_0, y_0)$. Specifically, this linear function:
+ \[L(x,y) = f(a,b) +f_x(a,b)(x-a)+f_y(a,b)(y-b),\] is called
+ the linearization for $f$ at $(a,b).$ A two variable function is
+considered differentiable at $(a,b)$ if:
+\[\Delta z = f_x(a,b)\Delta x + f_y(a,b)\Delta y + \epsilon_1\Delta x + \epsilon_2\Delta y,\]
+where $\epsilon_1$ and $\epsilon_2$ are functions of $\Delta x$ and $\Delta y$
+such that $\epsilon_1$ and $\epsilon_2 \to 0$ as $(\Delta x,\Delta y) \to (0,0).$
+Rephrased, if the partial derivatives exist and are continous at $(a,b)$,
+then the function is differentiable at $(a,b)$. 
+
+$\Delta z$ is the 
+actual change in $z$, while $dz$ is the linear approximation of the change in $z$:
+\[dz = \pdv{z}{x}dx + \pdv{z}{y}dy.\]
+
+One of the chain rules for multivariable functions:
+\[\dv{z}{t} = \pdv{z}{x}\dv{x}{t} + \pdv{z}{y}\dv{y}{t}.\]
+When $x$ and $y$ are functions of two variables $s$ and $t$, 
+\[\dv{z}{s} = \pdv{z}{x}\pdv{x}{s} + \pdv{z}{y}\pdv{y}{s},\]
+\[\dv{z}{t} = \pdv{z}{x}\pdv{x}{t} + \pdv{z}{y}\pdv{y}{t}.\]
+Finding $y'$ from the implicitly defined equation:
+\[x^3 + y^3 = 6xy.\]
+We can write this equation as:
+\[F(x,y) = x^3 + y^3 - 6xy = 0.\]
+Knowing that $y$ can be written as a function of $x$ and that 
+$F(x,y) = 0$, we can rewrite 
+\[\pdv{F}{x} + \pdv{F}{y}\dv{y}{x} = 0,\]
+as \[\dv{y}{x} = -\frac{F_y}{F_x}.\]
+Therefore, in the above equation 
+\[y' = -\frac{F_y}{F_x} = -\frac{x^2 - 2y}{y^2 -2x}.\]
+Extending this result, for the equation
+\[F(x,y,z)=F(x,y,f(x,y))=0,\]
+\[\pdv{z}{x} = -\frac{F_z}{F_x},\] and
+\[\pdv{z}{y} = -\frac{F_z}{F_y}.\]
+
 
 
 
