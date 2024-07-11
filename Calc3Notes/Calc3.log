@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  11 JUL 2024 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  11 JUL 2024 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/semic/OneDrive/Desktop/Math Notes/Math-Notes/Calc3"
-(c:/Users/semic/OneDrive/Desktop/Math Notes/Math-Notes/Calc3.tex
+**"c:/Users/semic/OneDrive/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3"
+(c:/Users/semic/OneDrive/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -198,12 +198,12 @@ L3 programming layer <2024-05-27>
  ) 
 Here is how much of TeX's memory you used:
  2614 strings out of 475501
- 37843 string characters out of 5776864
+ 37876 string characters out of 5776864
  1935908 words of memory out of 5000000
  25266 multiletter control sequences out of 15000+600000
  563764 words of font info for 56 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,6n,93p,363b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,374b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 Output written on Calc3.pdf (7 pages, 228018 bytes).
 PDF statistics:
