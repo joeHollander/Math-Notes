@@ -187,6 +187,39 @@ Extending this result, for the equation
 \[\pdv{z}{x} = -\frac{F_x}{F_z},\] and
 \[\pdv{z}{y} = -\frac{F_y}{F_z}.\]
 
+The directional derivative of $f$ at $(x_0, y_0)$ in the direction
+of a unit vector $\mathbf{u} = \left\langle a,b \right\rangle$:
+\[D_uf(x_0,y_0) = \lim_{h \to 0}\frac{f(x_0 + ha, y_0 + hb) - f(x_0,y_0)}{h}.\]
+If $f$ is a directional function of $x$ and $y$, then $f$ has a directional
+derivative in the direction of the unit vector $\mathbf{u} = \left\langle a,b \right\rangle$
+and \[D_uf(x,y) = f_x(x,y)a + f_y(x,y)b
+= \left\langle f_x(x,y),f_y(x,y) \right\rangle \cdot \mathbf{u}
+.\]
+$\left\langle f_x(x,y),f_y(x,y) \right\rangle$ is called the gradient vector of
+$f$ and is also denoted by $\nabla f$. Also defined by:
+\[\nabla f(x,y) = \pdv{f}{x}\mathbf{i} + \pdv{f}{y}\mathbf{j}.\]
+Therefore, the directional derivative can be written as:
+\[D_uf(x,y)=\nabla f(x,y) \cdot \mathbf{u}.\]
+
+The maximum of the directional derivative 
+$D_uf(\mathbf{x})$ is $|\nabla f(\mathbf{x})|)$, and it occurs when
+$\mathbf{u}$ has the same direction as the gradient vector $\nabla f(\mathbf{x})$.
+
+Given a level surface $F(x,y,z) = k$, the gradient vector $\nabla F$
+is perpendicular to the surface, and therefore, the tangent plane to the surface
+can be represented by the point and the gradient vector of that point.
+Using the standard equation of a plane:
+\[F_x(x_0,y_0,z_0)(x-x_0)+F_y(x_0,y_0,z_0)(y-y_0)+F_z(x_0,y_0,z_0)(z-z_0)=0.\]
+The normal line is the line perpendicular to the surface at point $(x_0,y_0,z_0)$,
+and therefore, its symmetric equations are:
+\[\frac{x-x_0}{F_x(x_0,y_0,z_0)} = \frac{y-y_0}{F_y(x_0,y_0,z_0)}
+ = \frac{z-z_0}{F_z(x_0,y_0,z_0)}.\]
+For an equation defined by $z=f(x,y)$, we can rewrite the equation as:
+\[F(x,y,z) = f(x,y) - z = 0.\] In this situation
+\[F_x(x_0,y_0,z_0) = f_x(x_0,y_0),\]
+\[F_y(x_0,y_0,z_0) = f_y(x_0,y_0),\]
+\[F_z(x_0,y_0,z_0) = -1.\]
+
 
 
 
