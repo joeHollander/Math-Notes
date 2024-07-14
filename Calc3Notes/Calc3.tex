@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{physics}
+\usepackage{amsfonts}
 
 \title{Calculus 3 notes}
 \author{Joe Hollander}
@@ -219,6 +220,22 @@ For an equation defined by $z=f(x,y)$, we can rewrite the equation as:
 \[F_x(x_0,y_0,z_0) = f_x(x_0,y_0),\]
 \[F_y(x_0,y_0,z_0) = f_y(x_0,y_0),\]
 \[F_z(x_0,y_0,z_0) = -1.\]
+
+If $f$ has a local maximum or minimum at $(a,b)$ and the first partial
+derivatives exist at $(a,b)$, then $f_x(a,b)=0$ and $f_y(a,b)=0$. Also,
+$\nabla f = \mathbf{0}$. $f$ has a critical point if $f_x(a,b)=0$ or $f_y(a,b)$
+or either one of the partial derivatives don't exist. A critical point doesn't
+guarantee a maximum or minimum. The second derivatives test:
+\[D(a,b)=f_{xx}(a,b)f_{yy}(a,b)-[f_{xy}(a,b)]^2.\]
+If $D>0$ and $f_{xx}(a,b)>0$, then $(a,b)$ is a local minimum,
+if $D>0$ and $f_{xx}(a,b)<0$, then $(a,b)$ is a local maximum,
+and if $D<0$ then $f(a,b)$ is a saddle point.
+
+A closed set in $\mathbb{R}^2$ is one that contains its boundary points, while
+a bounded set in $\mathbb{R}^2$ is one contained in a disk. In order to find
+maximums and minimums on a closed set, find the critical points inside the set
+and then find the critical points on the boundary.
+
 
 
 
