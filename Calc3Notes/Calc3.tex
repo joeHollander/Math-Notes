@@ -236,8 +236,33 @@ a bounded set in $\mathbb{R}^2$ is one contained in a disk. In order to find
 maximums and minimums on a closed set, find the critical points inside the set
 and then find the critical points on the boundary.
 
+Use given conditions in optimization problem to simplify problem with
+less variables.
 
+Lagrange's method seeks maximize $f(x,y)$ given $g(x,y)=k$. The gradient vectors
+at the intersection point of $f(x_0,y_0)=c$ and $g(x,y)=k$ must be multiples of 
+each other:
+\[\nabla f(x_0,y_0) = \lambda \nabla g(x_0,y_0).\]
 
+\noindent Visually: 
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{LagrangeMultiplier.png}
+\end{center}
+
+This method extends to three dimensions where $f(x,y,z)$ is maximized given
+$g(x,y,z)=k$. Lagrange's method also assumes that $\nabla g \neq \mathbf{0}$. If $\lambda = 0$, then $\nabla f = \mathbf{0}$ and $(x_0, y_0, z_0)$
+is a critical point. The constant $\lambda$ is called a Lagrange multiplier.
+In terms of components:
+\[\nabla f = \lambda \nabla g,\]
+\[f_x = \lambda g_x, f_y = \lambda g_y, f_z = \lambda g_z.\]
+Solving these equations given $g(x,y,z)=k$ solves the problem.
+
+Lagrange's method extends to two conditions. Visually: 
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{TwoConstantLagrangeMultiplier.png}
+\end{center}
+Therefore, 
+\[\nabla f(x_0,y_0,z_0) = \lambda \nabla g(x_0,y_0,z_0) + \mu \nabla h(x_0,y_0,z_0).\]
 
 
 
