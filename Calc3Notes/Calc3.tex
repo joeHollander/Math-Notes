@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{physics}
 \usepackage{amsfonts}
+\usepackage{amsmath}
 
 \title{Calculus 3 notes}
 \author{Joe Hollander}
@@ -72,7 +73,7 @@ and
 \[r(t) = \left\langle s\cos(\alpha)t, -4.9t^2 + s\sin(\alpha)t\right\rangle,\]
 \[x = s\cos(\alpha)t, y = -4.9t^2 + s\sin(\alpha)t\].
 
-\section*{Partial Derivatives}\
+\section*{Partial Derivatives}
 
 Domain for a function of two variables can be written as: 
 \[D = \{(x,y)\:|\: x + y != 2, xy < -1\}.\]
@@ -263,6 +264,35 @@ Lagrange's method extends to two conditions. Visually:
 \end{center}
 Therefore, 
 \[\nabla f(x_0,y_0,z_0) = \lambda \nabla g(x_0,y_0,z_0) + \mu \nabla h(x_0,y_0,z_0).\]
+
+\section*{Multiple Integrals}
+
+Definition of the volume of a solid $S$ above the $xy$ axis and below $f$
+as a double integral and as a riemann sum over the rectangle $R$:
+
+\[V = \iint\limits_R f(x,y) \,dA = \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij},y^*_{ij}) \, \Delta A,\]
+where $(x^*_{ij},y^*_{ij})$ are samples from the $ij$ subdivision. If 
+there is a constant $M$ such that $|f(x,y)| <= M$ for all $(x,y)$ in $R$,
+and $f$ is continous on $R$, then $f$ is integrable over $R$.
+
+The midpoint rule states:
+\[\iint\limits_R f(x,y) \,dA \approx \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(\bar{x_{ij}},\bar{y_{ij}}) \, \Delta A,\]
+
+Partial integration such as:
+\[A(x) = \int_{c}^{d} f(x,y) \, dy,\]
+is similar to partial derivation and means to integrate with respect to $y$
+while keeping $x$ constant. An iterated integral integrates with respect
+to one variable after another:
+\[ \int_{a}^{b} \int_{c}^{d} f(x,y) \, dy \, dx = \int_{a}^{b} A(x) \, dx.\]
+Calculate from the inside out. A rectangle can be defined as 
+$R=[a,b] \cross [c,d]$.
+
+The average value of a function of two variables over the rectangle $R$
+with area $A(R)$:
+\[f_{avg} = \frac{1}{A(R)} \iint \limits_R f(x,y) \, dA.\]
+Therefore, if $f(x,y) \ge 0$:
+\[A(R) \cross f_{avg} = \iint \limits_R f(x,y) \, dA.\]
+
 
 
 
