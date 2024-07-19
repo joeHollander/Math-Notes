@@ -76,7 +76,7 @@ and
 \section*{Partial Derivatives}
 
 Domain for a function of two variables can be written as: 
-\[D = \{(x,y)\:|\: x + y != 2, xy < -1\}.\]
+\[D = \{(x,y) \ | \ x + y != 2, \ xy < -1\}.\]
 Similar to contour drawings on maps, level curves of a function $f$ of two variables
 are the curves with equations $f(x,y) = k$ where $k$ is a constant. 
 \begin{center}
@@ -293,6 +293,46 @@ with area $A(R)$:
 Therefore, if $f(x,y) \ge 0$:
 \[A(R) \cross f_{avg} = \iint \limits_R f(x,y) \, dA.\]
 
+To find a double integral over a more general region $D$, 
+we define the function:
+\[ F(x) = \begin{cases} 
+      f(x,y) & (x,y) \in D \\
+      0 & (x,y) \in R \notin D
+   \end{cases}.
+\]
+A plane region $D$ is defined as type I when $g_1$ and $g_2$ are continous:
+\[D = \{(x,y) \ | \ a \le x \le b, \ g_1(x) \le y \le g_2(x)\}.\]
+Type I regions must be continous but don't have to be defined by a single 
+formula. Therefore,
+\[\iint \limits_D f(x,y) \, dA  = \int_{a}^{b} \int_{g_1(x)}^{g_2(x)} f(x,y) \, dy \, dx.\]
+Type II regions are similar to type I regions and are defined as:
+\[D = \{(x,y) \ | \ c \le y \le d, \ h_1(y) \le x \le h_2(y)\},\]
+where $h_1$ and $h_2$ are continuous. Similarly,
+\[\iint \limits_D f(x,y) \, dA  = \int_{c}^{d} \int_{h_1(y)}^{h_2(y)} f(x,y) \, dx \, dy.\]
+
+An example of solving a problem where $D$ is bounded by $y=2x^2$
+and $y=1+x^2$. Therefore,
+\[D = \{(x,y) \ | \ -1 \le x \le 1, \ {2x^2} \le y \le {1+x^2} \},\]
+and:
+\[
+\begin{split}
+\iint \limits_D f(x,y) \, dA & = \int_{-1}^{1} \int_{2x^2}^{1+x^2} (x+2y) \,dy\,dx \\
+& = \int_{-1}^{1} [xy+y^2]_{y=2x^2}^{y=1+x^2} \, dx \\
+& = \int_{-1}^{1} [x(1+x^2) + (1+x^2)^2 - x(2x^2) + (2x^2)^2] \, dx \\
+& = \int_{-1}^{1} (-3x^4-x^3+2x^2+x+1) \, dx \\
+& = -3\frac{x^5}{5} - \frac{x^4}{4} + 2\frac{x^3}{3} + \frac{x^2}{2} + x \bigg]_{-1}^{1} = \frac{32}{15}. 
+\end{split}
+\]
+
+Sometimes it is easier to solve a double integral by changing the order
+of integration. For example $D$ can be written as:
+\[
+D = \{(x,y) \ | \ 0 \le x \le 1, \ 1 \le y \le x\},
+\]
+and
+\[
+    D = \{(x,y) \ | \ 0 \le y \le 1, \ 0 \le x \le y\}.
+\]
 
 
 
