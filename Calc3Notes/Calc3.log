@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  19 JUL 2024 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  20 JUL 2024 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -172,80 +172,88 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<LevelCurves.png, id=17, 540.0175pt x 427.5975pt>
-File: LevelCurves.png Graphic file (type png)
-<use LevelCurves.png>
-Package pdftex.def Info: LevelCurves.png  used on input line 83.
+<Images/LevelCurves.png, id=17, 540.0175pt x 427.5975pt>
+File: Images/LevelCurves.png Graphic file (type png)
+<use Images/LevelCurves.png>
+Package pdftex.def Info: Images/LevelCurves.png  used on input line 83.
 (pdftex.def)             Requested size: 341.44058pt x 270.36002pt.
 
 
 [2]
 
-[3 <./LevelCurves.png>]
+[3 <./Images/LevelCurves.png>]
 Overfull \hbox (5.96365pt too wide) in paragraph at lines 103--108
 \OT1/cmr/m/n/10 Squeeze the-o-rem ap-plies to mul-ti-vari-able func-tions also. Ad-di-tion-ally, the epsilon-
  []
 
-<PartialDerivative.png, id=26, 142.131pt x 102.3825pt>
-File: PartialDerivative.png Graphic file (type png)
-<use PartialDerivative.png>
-Package pdftex.def Info: PartialDerivative.png  used on input line 127.
+<Images/PartialDerivative.png, id=26, 142.131pt x 102.3825pt>
+File: Images/PartialDerivative.png Graphic file (type png)
+<use Images/PartialDerivative.png>
+Package pdftex.def Info: Images/PartialDerivative.png  used on input line 127.
 (pdftex.def)             Requested size: 341.44446pt x 245.95578pt.
 
 
 [4]
-<TangentPlane.png, id=30, 140.32425pt x 127.677pt>
-File: TangentPlane.png Graphic file (type png)
-<use TangentPlane.png>
-Package pdftex.def Info: TangentPlane.png  used on input line 146.
+<Images/TangentPlane.png, id=30, 140.32425pt x 127.677pt>
+File: Images/TangentPlane.png Graphic file (type png)
+<use Images/TangentPlane.png>
+Package pdftex.def Info: Images/TangentPlane.png  used on input line 146.
 (pdftex.def)             Requested size: 341.45924pt x 310.68394pt.
 
 
-[5 <./PartialDerivative.png>]
+[5 <./Images/PartialDerivative.png>]
 
-[6 <./TangentPlane.png>]
+[6 <./Images/TangentPlane.png>]
 
 [7]
 
 [8]
-<LagrangeMultiplier.png, id=46, 139.722pt x 108.405pt>
-File: LagrangeMultiplier.png Graphic file (type png)
-<use LagrangeMultiplier.png>
-Package pdftex.def Info: LagrangeMultiplier.png  used on input line 250.
+<Images/LagrangeMultiplier.png, id=46, 139.722pt x 108.405pt>
+File: Images/LagrangeMultiplier.png Graphic file (type png)
+<use Images/LagrangeMultiplier.png>
+Package pdftex.def Info: Images/LagrangeMultiplier.png  used on input line 250.
 (pdftex.def)             Requested size: 341.43922pt x 264.90973pt.
 
 
-[9 <./LagrangeMultiplier.png>]
-<TwoConstantLagrangeMultiplier.png, id=52, 133.6995pt x 98.769pt>
-File: TwoConstantLagrangeMultiplier.png Graphic file (type png)
-<use TwoConstantLagrangeMultiplier.png>
-Package pdftex.def Info: TwoConstantLagrangeMultiplier.png  used on input line 263.
+[9 <./Images/LagrangeMultiplier.png>]
+<Images/TwoConstantLagrangeMultiplier.png, id=52, 133.6995pt x 98.769pt>
+File: Images/TwoConstantLagrangeMultiplier.png Graphic file (type png)
+<use Images/TwoConstantLagrangeMultiplier.png>
+Package pdftex.def Info: Images/TwoConstantLagrangeMultiplier.png  used on input line 263.
 (pdftex.def)             Requested size: 341.46164pt x 252.25092pt.
 
 
-[10 <./TwoConstantLagrangeMultiplier.png>]
+[10 <./Images/TwoConstantLagrangeMultiplier.png>]
 
 [11]
+<Images/PolarDoubleIntegration.png, id=62, 139.722pt x 90.93974pt>
+File: Images/PolarDoubleIntegration.png Graphic file (type png)
+<use Images/PolarDoubleIntegration.png>
+Package pdftex.def Info: Images/PolarDoubleIntegration.png  used on input line 365.
+(pdftex.def)             Requested size: 341.43922pt x 222.22978pt.
 
-[12] (./Calc3.aux)
+
+[12]
+
+[13 <./Images/PolarDoubleIntegration.png>] (./Calc3.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2759 strings out of 475501
- 40334 string characters out of 5776864
+ 2768 strings out of 475501
+ 40912 string characters out of 5776864
  1937908 words of memory out of 5000000
- 25389 multiletter control sequences out of 15000+600000
+ 25398 multiletter control sequences out of 15000+600000
  568074 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  79i,19n,93p,395b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Calc3.pdf (12 pages, 292666 bytes).
+Output written on Calc3.pdf (13 pages, 300000 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

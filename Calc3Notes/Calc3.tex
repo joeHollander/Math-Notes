@@ -80,7 +80,7 @@ Domain for a function of two variables can be written as:
 Similar to contour drawings on maps, level curves of a function $f$ of two variables
 are the curves with equations $f(x,y) = k$ where $k$ is a constant. 
 \begin{center}
-    \includegraphics[width=12cm,height=12cm, keepaspectratio]{LevelCurves.png}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/LevelCurves.png}
 \end{center}
 Functions of three variables are the same as functions of two variables and
 functions of multiple variables can be packaged into a function of one vector
@@ -124,7 +124,7 @@ or \[f_y(a,b) = \lim_{h \to 0}\frac{f(a,b+h) - f(a,b)}{h}.\]
 
 \noindent Visually: 
 \begin{center}
-    \includegraphics[width=12cm,height=12cm, keepaspectratio]{PartialDerivative.png}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/PartialDerivative.png}
 \end{center}
 
 When implicity differentiating equations with respect to $x$ such as:
@@ -143,7 +143,7 @@ the point $(a,b)$ then
 Tangent plane contains both tangent lines from the derivative with respect to $x$
 and the derivative with respect to $y$.  
 \begin{center}
-    \includegraphics[width=12cm,height=12cm, keepaspectratio]{TangentPlane.png}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/TangentPlane.png}
 \end{center}
 
 Another equation of a plane is:
@@ -247,7 +247,7 @@ each other:
 
 \noindent Visually: 
 \begin{center}
-    \includegraphics[width=12cm,height=12cm, keepaspectratio]{LagrangeMultiplier.png}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/LagrangeMultiplier.png}
 \end{center}
 
 This method extends to three dimensions where $f(x,y,z)$ is maximized given
@@ -260,7 +260,7 @@ Solving these equations given $g(x,y,z)=k$ solves the problem.
 
 Lagrange's method extends to two conditions. Visually: 
 \begin{center}
-    \includegraphics[width=12cm,height=12cm, keepaspectratio]{TwoConstantLagrangeMultiplier.png}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/TwoConstantLagrangeMultiplier.png}
 \end{center}
 Therefore, 
 \[\nabla f(x_0,y_0,z_0) = \lambda \nabla g(x_0,y_0,z_0) + \mu \nabla h(x_0,y_0,z_0).\]
@@ -349,6 +349,30 @@ then:
 m \cdot A(D) \le \iint \limits_D f(x,y) \, dA \le M \cdot A(D). 
 \]
 
+Sometimes it is easier to represent areas with polar coordinates. If 
+$f$ is continous on a polar rectangle $R$ given by
+\begin{align}
+0 \le a \le r \le b, \nonumber \\ 
+\alpha \le \theta \le \beta, \nonumber \\
+0 \le \beta - \alpha \le 2\pi \nonumber,
+\end{align}
+then:
+\[
+\iint \limits_R f(x,y)\, dA = \int_{\alpha}^{\beta} \int_{a}^{b} f(r\cos\theta, r\sin\theta) \, r \, dr \, d\theta.
+\]
+To remember the formula:
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{Images/PolarDoubleIntegration.png}
+\end{center}
+
+Similar to cartesian double integration, functions can be used as bounds:
+\[
+D = \{(r,\theta) \ | \ \alpha \le \theta \le \beta, \ h_1(\theta) \le r \le h_2(\theta)\},  
+\]
+and:
+\[
+\iint \limits_D f(x,y) \, dA  = \int_{\alpha}^{\beta} \int_{h_1(\theta)}^{h_2(\theta)} f(r\cos\theta, r\sin\theta) \, r \, dr \, d\theta.
+\]
 
 
 \end{document}
