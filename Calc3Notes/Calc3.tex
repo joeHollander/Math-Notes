@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{physics}
-\usepackage{amsfonts}
+\usepackage{amsfo nts}
 \usepackage{amsmath}
 
 \title{Calculus 3 notes}
@@ -224,7 +224,7 @@ For an equation defined by $z=f(x,y)$, we can rewrite the equation as:
 
 If $f$ has a local maximum or minimum at $(a,b)$ and the first partial
 derivatives exist at $(a,b)$, then $f_x(a,b)=0$ and $f_y(a,b)=0$. Also,
-$\nabla f = \mathbf{0}$. $f$ has a critical point if $f_x(a,b)=0$ or $f_y(a,b)$
+$\nabla f = \mathbf{0}$. The function $f$ has a critical point if $f_x(a,b)=0$, $f_y(a,b)=0$,
 or either one of the partial derivatives don't exist. A critical point doesn't
 guarantee a maximum or minimum. The second derivatives test:
 \[D(a,b)=f_{xx}(a,b)f_{yy}(a,b)-[f_{xy}(a,b)]^2.\]
@@ -372,6 +372,51 @@ D = \{(r,\theta) \ | \ \alpha \le \theta \le \beta, \ h_1(\theta) \le r \le h_2(
 and:
 \[
 \iint \limits_D f(x,y) \, dA  = \int_{\alpha}^{\beta} \int_{h_1(\theta)}^{h_2(\theta)} f(r\cos\theta, r\sin\theta) \, r \, dr \, d\theta.
+\]
+
+Caculating mass from densities is just as easy as calculating volumes.
+Given a density function $\rho (x,y)$, and a 2D object with mass $m$
+over a region $D$,
+\[
+m = \iint \limits_D \rho(x,y) \, dA.
+\]
+Similarly the moment of an object around the $x$-axis and the $y$-axis:
+\[
+M_x = \iint \limits_D y \rho(x,y) \, dA,
+M_y = \iint \limits_D x \rho(x,y) \, dA.
+ \]
+The moment of an object around the $y$-axis would have an $x$ in the integrand.
+The center of mass $(\bar{x}, \bar{y})$ must satisfy $m\bar{x} = M_y$ and
+$m\bar{y} = M_x$. Therefore, 
+\begin{align}
+    \bar{x} = \frac{M_y}{m},\nonumber \\ 
+    \bar{y} = \frac{M_x}{m}. \nonumber
+\end{align}
+
+The moment of inertia has the $x$ or $y$ term squared. The polar moment
+of inertia:
+\[
+I_0 = \iint \limits_D (x^2 + y^2) \rho(x,y) \, dA.
+\]
+The polar moment has the property $I_0 = I_x + I_y$. The moment of 
+inertia of a disk with radius $a$:
+\[
+I_0 = \frac{1}{2}ma^2.
+\]
+The radii of gyration $\bar{\bar{x}}$ and $\bar{\bar{y}}$ with respect to
+the $y$-axis and $x$-axis respectively satisfy $m\bar{\bar{x}}=I_y$ and 
+$m\bar{\bar{y}}=I_x$. The radii of gyration for a disk with radius $a$:
+\[
+    \bar{\bar{x}}, \bar{\bar{y}} = \frac{1}{2}a.
+\]
+
+For a probability density $f(x,y)$:
+\[
+P((X,Y) \in D) = \iint \limits_D f(x,y) \, dA.
+\]
+Since the total probability must be one:
+\[
+1 = \iint \limits_{\mathbb{R}^2} f(x,y) \, dA
 \]
 
 
