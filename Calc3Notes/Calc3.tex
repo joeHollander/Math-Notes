@@ -428,6 +428,17 @@ In polar:
 A(S) = \iint  \limits_D \sqrt{[f_x(r\cos\theta,r\sin\theta)]^2 [f_y(r\cos\theta,r\sin\theta)]^2+1} \, r\,dr \,d\theta.
 \]
 
+Given two bounds $z = U_1(x,y)$ and $z = U_2(x,y)$, the triple integral is
+\[
+\iint \limits_D \int_{U_2(x,y)}^{U_1(x,y)} f(x,y,z) \, dz \, dA.
+\]
 
+Whatever first integration you use, find the projection of the volume onto the opposite plane:
+if using $z$, find the projection of the volume onto the $xy$-plane. To find
+the projection, set the two bounds equal. For the center of mass:
+\[
+\bar{x} = \frac{M_{yz}}{m},
+\] 
+and vice versa.
 
 \end{document}
