@@ -471,4 +471,44 @@ To evaluate a triple integral using spherical coordinates:
     \iiint \limits_E f(x,y,z) \, dV = \int_{\phi_1}^{\phi_2} \int_{\theta_1}^{\theta_2} \int_{\rho_1}^{\rho_2} f(\rho,\phi,\theta) \, \rho^2\sin\phi \, d\rho \, d\theta \, d\phi.
 \]
 
+To find the transformation of a region from a $uv$-plane to an $xy$-plane,
+solve for $u$ and $v$, draw the curves formed by $u$ and $v$ at their boundaries,
+and then find the interection of these curves. Given multiple equations, 
+find a repeated pattern for $u$ and for $v$. Substituting in $u$ and $v$, 
+you will be able to see the bounds of $u$ and $v$.
+
+The Jacobian of $x$ and $y$ with respect to $u$ and $v$ is:
+{\Huge\[\renewcommand\arraystretch{1.6}
+\pdv{(x, y)}{(u, v)} = \begin{vmatrix}
+    \pdv{x}{u} & \pdv{x}{v} \\[0.5ex]
+    \pdv{y}{u} & \pdv{y}{v}
+    \end{vmatrix}.
+\]}
+The Jacobian gives us the extra factor when converting an integral to
+$u$ and $v$.
+Therefore,
+\[
+\iint \limits_R f(x,y) \, dA =
+\iint \limits_S f(x(u,v), y(u,v)) \, \abs{\pdv{(x, y)}{(u, v)}} \, du \, dv. 
+\]
+
+A reminder: the determinant of a 
+$2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ is given by: 
+\[ 
+\begin{vmatrix} 
+a & b \\ 
+c & d 
+\end{vmatrix} = ad - bc,
+\]
+and the determinant of a 
+$3 \times 3$ matrix $\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}$ is given by:
+\[
+\begin{vmatrix}
+    a & b & c \\ 
+    d & e & f \\ 
+    g & h & i
+\end{vmatrix} = 
+a(ei - fh) + b(di - fg) + c(dh * eg).
+\]
+
 \end{document}
