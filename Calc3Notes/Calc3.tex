@@ -11,7 +11,6 @@
 \begin{document}
 \maketitle
 
-\newtheorem{theorem}{Theorem}[section]
 
 \section*{Vector Functions}
 \noindent Dot product: 
@@ -510,5 +509,16 @@ $3 \times 3$ matrix $\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pm
 \end{vmatrix} = 
 a(ei - fh) + b(di - fg) + c(dh * eg).
 \]
+
+\section*{Vector Calculus}
+
+Vector fields often represent fluid flow, electrical currents, and heat flow.
+They are defined as $\mathbf{F}(x,y) = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}
+= \left\langle P(x,y), Q(x,y) \right\rangle$.
+
+Gradient fields are a type of vector field. A vector field $\mathbf{F}$ is 
+considered conservative if it is the gradient of some other function, 
+that is, if there exists a function $f$ such that $\mathbf{F} = \nabla f$. 
+The function $f$ is called a potential function of $\mathbf{F}$.
 
 \end{document}
