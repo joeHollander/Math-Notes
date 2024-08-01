@@ -539,11 +539,13 @@ the line segment from $\mathbf{r}_0$ to $\mathbf{r}_1$ is
 \mathbf{r}(t) = (1-t)\mathbf{r}_0 + t\mathbf{r}_1.
 \]
 
-The work done for moving a particle in a vector field $\mathbf{F}$ for 
-$0 \le t \le 1$ is
+The work done for moving a particle in a vector field $\mathbf{F}$ on a curve $C$ is
 \[
-\int_0^1 \mathbf{F} \, d\mathbf{r}. 
+\int \limits_C \mathbf{F} \cdot d\mathbf{r} = 
+\int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) \, dt.
 \]
+Work is positive when the vector field aligns with the curve and negative when
+the vector field doesn't align with the curve. Therefore, more work is more negative. 
 
 
 \end{document}
