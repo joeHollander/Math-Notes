@@ -3,10 +3,11 @@
 \usepackage{physics}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{array, esint}
 
 \title{Calculus 3 notes}
 \author{Joe Hollander}
-\date{Summer 2024}
+\date{Summer 2024}  
 
 \begin{document}
 \maketitle
@@ -547,5 +548,30 @@ The work done for moving a particle in a vector field $\mathbf{F}$ on a curve $C
 Work is positive when the vector field aligns with the curve and negative when
 the vector field doesn't align with the curve. Therefore, more work is more negative. 
 
+The fundamental theorem of line integrals states: 
+that for a conservative function $\mathbf{F} = \nabla f$,
+\[
+\int \limits_C \mathbf{F} \, d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
+\]
+This also means, for a conservative function, paths are independent.
+This means that a path with the same endpoints and direction
+have the same value. If a function is conservative,
+and if $\mathbf{F} = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$, then
+\[
+\pdv{P}{y} = \pdv{Q}{x}.
+\]
+
+A simple curve is one without intersections,
+and a simple closed curve is one that has the beginning and endpoints
+and has no intersections.
+
+Green's theorem, where $\mathbf{F} = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$:
+\[
+\varointctrclockwise \limits_C \mathbf{F} \, d\mathbf{r} =
+\iint \limits_R [\pdv{Q}{x} - \pdv{P}{y}] \, dA.
+\]
+A clockwise path would be negative of a counter-clockwise path.
+If there is a hole in a disk but both curves are positively oriented,
+Green's theorem still works.
 
 \end{document}

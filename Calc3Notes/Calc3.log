@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  1 AUG 2024 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  4 AUG 2024 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/semic/OneDrive/Desktop/Math-Notes/Calc3Notes/Calc3
-(c:/Users/semic/OneDrive/Desktop/Math-Notes/Calc3Notes/Calc3.tex
+**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3"
+(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-05-27>
+L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
@@ -44,7 +44,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ) (c:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
  (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-05-27 L3 programming layer (loader) 
+Package: expl3 2024-07-20 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
@@ -122,49 +122,65 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box55
+\extrarowheight=\dimen154
+\NC@list=\toks23
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box56
+) (c:/texlive/2024/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
 ) (./Calc3.aux)
 \openout1 = `Calc3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count281
-\scratchdimen=\dimen153
-\scratchbox=\box55
+\scratchdimen=\dimen155
+\scratchbox=\box57
 \nofMPsegments=\count282
 \nofMParguments=\count283
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count284
-\MPscratchDim=\dimen154
+\MPscratchDim=\dimen156
 \MPnumerator=\count285
 \makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 13.
+ (c:/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
 )
 
 [1
@@ -173,29 +189,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Images/LevelCurves.png, id=17, 540.0175pt x 427.5975pt>
 File: Images/LevelCurves.png Graphic file (type png)
 <use Images/LevelCurves.png>
-Package pdftex.def Info: Images/LevelCurves.png  used on input line 82.
+Package pdftex.def Info: Images/LevelCurves.png  used on input line 83.
 (pdftex.def)             Requested size: 341.44058pt x 270.36002pt.
 
 
 [2]
 
 [3 <./Images/LevelCurves.png>]
-Overfull \hbox (5.96365pt too wide) in paragraph at lines 102--107
+Overfull \hbox (5.96365pt too wide) in paragraph at lines 103--108
 \OT1/cmr/m/n/10 Squeeze the-o-rem ap-plies to mul-ti-vari-able func-tions also. Ad-di-tion-ally, the epsilon-
  []
 
-<Images/PartialDerivative.png, id=26, 142.131pt x 102.3825pt>
+<Images/PartialDerivative.png, id=27, 142.131pt x 102.3825pt>
 File: Images/PartialDerivative.png Graphic file (type png)
 <use Images/PartialDerivative.png>
-Package pdftex.def Info: Images/PartialDerivative.png  used on input line 126.
+Package pdftex.def Info: Images/PartialDerivative.png  used on input line 127.
 (pdftex.def)             Requested size: 341.44446pt x 245.95578pt.
 
 
 [4]
-<Images/TangentPlane.png, id=30, 140.32425pt x 127.677pt>
+<Images/TangentPlane.png, id=31, 140.32425pt x 127.677pt>
 File: Images/TangentPlane.png Graphic file (type png)
 <use Images/TangentPlane.png>
-Package pdftex.def Info: Images/TangentPlane.png  used on input line 145.
+Package pdftex.def Info: Images/TangentPlane.png  used on input line 146.
 (pdftex.def)             Requested size: 341.45924pt x 310.68394pt.
 
 
@@ -206,28 +222,28 @@ Package pdftex.def Info: Images/TangentPlane.png  used on input line 145.
 [7]
 
 [8]
-<Images/LagrangeMultiplier.png, id=46, 139.722pt x 108.405pt>
+<Images/LagrangeMultiplier.png, id=47, 139.722pt x 108.405pt>
 File: Images/LagrangeMultiplier.png Graphic file (type png)
 <use Images/LagrangeMultiplier.png>
-Package pdftex.def Info: Images/LagrangeMultiplier.png  used on input line 249.
+Package pdftex.def Info: Images/LagrangeMultiplier.png  used on input line 250.
 (pdftex.def)             Requested size: 341.43922pt x 264.90973pt.
 
 
 [9 <./Images/LagrangeMultiplier.png>]
-<Images/TwoConstantLagrangeMultiplier.png, id=52, 133.6995pt x 98.769pt>
+<Images/TwoConstantLagrangeMultiplier.png, id=53, 133.6995pt x 98.769pt>
 File: Images/TwoConstantLagrangeMultiplier.png Graphic file (type png)
 <use Images/TwoConstantLagrangeMultiplier.png>
-Package pdftex.def Info: Images/TwoConstantLagrangeMultiplier.png  used on input line 262.
+Package pdftex.def Info: Images/TwoConstantLagrangeMultiplier.png  used on input line 263.
 (pdftex.def)             Requested size: 341.46164pt x 252.25092pt.
 
 
 [10 <./Images/TwoConstantLagrangeMultiplier.png>]
 
 [11]
-<Images/PolarDoubleIntegration.png, id=62, 139.722pt x 90.93974pt>
+<Images/PolarDoubleIntegration.png, id=63, 139.722pt x 90.93974pt>
 File: Images/PolarDoubleIntegration.png Graphic file (type png)
 <use Images/PolarDoubleIntegration.png>
-Package pdftex.def Info: Images/PolarDoubleIntegration.png  used on input line 364.
+Package pdftex.def Info: Images/PolarDoubleIntegration.png  used on input line 365.
 (pdftex.def)             Requested size: 341.43922pt x 222.22978pt.
 
 
@@ -244,22 +260,22 @@ Package pdftex.def Info: Images/PolarDoubleIntegration.png  used on input line 3
 [17] (./Calc3.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-05-27>
+L3 programming layer <2024-07-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2788 strings out of 475501
- 41334 string characters out of 5776864
- 1938908 words of memory out of 5000000
- 25418 multiletter control sequences out of 15000+600000
- 573334 words of font info for 94 fonts, out of 8000000 for 9000
+ 2939 strings out of 475495
+ 43671 string characters out of 5776743
+ 1938960 words of memory out of 5000000
+ 25564 multiletter control sequences out of 15000+600000
+ 573937 words of font info for 103 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,19n,93p,382b,223s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Calc3.pdf (17 pages, 329249 bytes).
+ 79i,19n,93p,391b,222s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/hollanderj/.texlive2024/texmf-var/fonts/pk/ljfour/public/esint/esint10.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Calc3.pdf (17 pages, 332563 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 160 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
