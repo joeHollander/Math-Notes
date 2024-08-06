@@ -596,9 +596,14 @@ The curl of the gradient of a function with continous second partial derivatives
 is the zero vector. This means that the curl of a conservative vector field 
 with component functions that are continuous partial derivatives is the zero vector. 
 Therefore, if the curl of a vector is the zero vector, then the vector field is conservative.
+Curl is zero if a paddle placed at a point moved but didn't rotate around its own axis. 
+Curl points in the positive $z$-axis if the curl is counter-clockwise and opposite for clockwise curl.
 
-The divergence of the curl of a function is the zero vector too because of this property:
-$\mathbf{a \cdot (a \cross b)} = 0$.
+
+The divergence of the curl of a function must be the zero vector too because of this property:
+$\mathbf{a \cdot (a \cross b)} = 0$. The divergence also represents rate of change 
+with respect to time flowing from the points. Divergence is positive if the vectors that
+start at the point are longer than the vectors that end at the point and vice versa. 
 
 The Laplace operator: 
 \[
