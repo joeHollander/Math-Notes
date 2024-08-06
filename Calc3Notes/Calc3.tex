@@ -508,7 +508,7 @@ $3 \times 3$ matrix $\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pm
     d & e & f \\ 
     g & h & i
 \end{vmatrix} = 
-a(ei - fh) + b(di - fg) + c(dh * eg).
+a(ei - fh) - b(di - fg) + c(dh * eg).
 \]
 
 \section*{Vector Calculus}
@@ -583,7 +583,7 @@ $\mathbf{F} = P(x,y,z)\mathbf{i} + Q(x,y,z)\mathbf{j} + R(x,y,z)\mathbf{k}$:
         \pdv*{}{x} & \pdv*{}{y} & \pdv*{}{z} \\ 
         P(x,y,z) & Q(x,y,z) & R(x,y,z)
     \end{vmatrix} = \nonumber \\
-    (\pdv*{R}{y} - \pdv*{Q}{z})\mathbf{i} + 
+    (\pdv*{R}{y} - \pdv*{Q}{z})\mathbf{i} -
     (\pdv*{R}{x} - \pdv*{P}{z})\mathbf{j} + 
     (\pdv*{Q}{x} - \pdv*{P}{y})\mathbf{k} \nonumber.
 \end{gather}
