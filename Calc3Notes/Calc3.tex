@@ -574,4 +574,48 @@ A clockwise path would be negative of a counter-clockwise path.
 If there is a hole in a disk but both curves are positively oriented,
 Green's theorem still works.
 
+The curl of a function $\mathbf{F}$ for 
+$\mathbf{F} = P(x,y,z)\mathbf{i} + Q(x,y,z)\mathbf{j} + R(x,y,z)\mathbf{k}$:
+\begin{gather}
+    \nabla \cross \mathbf{F} = 
+    \begin{vmatrix}
+        \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 
+        \pdv*{}{x} & \pdv*{}{y} & \pdv*{}{z} \\ 
+        P(x,y,z) & Q(x,y,z) & R(x,y,z)
+    \end{vmatrix} = \nonumber \\
+    (\pdv*{R}{y} - \pdv*{Q}{z})\mathbf{i} + 
+    (\pdv*{R}{x} - \pdv*{P}{z})\mathbf{j} + 
+    (\pdv*{Q}{x} - \pdv*{P}{y})\mathbf{k} \nonumber.
+\end{gather}
+The divergence of the same function: 
+\[
+\nabla \cdot \mathbf{F} = \pdv{P}{x} + \pdv{Q}{y} + \pdv{R}{z}.
+\]
+
+The curl of the gradient of a function with continous second partial derivatives
+is the zero vector. This means that the curl of a conservative vector field 
+with component functions that are continuous partial derivatives is the zero vector. 
+Therefore, if the curl of a vector is the zero vector, then the vector field is conservative.
+
+The divergence of the curl of a function is the zero vector too because of this property:
+$\mathbf{a \cdot (a \cross b)} = 0$.
+
+The Laplace operator: 
+\[
+\nabla^2 = \nabla \cdot \nabla.
+\]
+With a function:
+\[
+\nabla^2 f = \pdv[2]{f}{x} + \pdv[2]{f}{y} + \pdv[2]{f}{z},
+\]
+with a vector field: 
+\[
+\nabla^2 \mathbf{F} = \nabla^2 P \mathbf{i} + \nabla^2 Q \mathbf{j} + \nabla^2 R \mathbf{k}.
+\]
+
+Also,
+\[
+\oint \limits_C \mathbf{F \cdot n} \, ds = \iint \limits_D \mbox{div} \ \mathbf{F}(x,y) \, dA
+\]
+
 \end{document}
