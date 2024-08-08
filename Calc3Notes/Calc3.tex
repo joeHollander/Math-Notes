@@ -649,4 +649,26 @@ For the first formula $D$ is on the $uv$-plane while in the second formula
 $D$ is on the $xy$-plane. A surface is considered smooth if 
 the cross product of its tangent vectors is never the zero vector.
 
+Flux is the volume of a uniform density,
+steady-state (velocity at a point doesn't change with time) fluid that passes
+through a surface in one unit of time. The flux is zero when the fluid is moving parallel
+to the surface, and the flux is at its maximum when the fluid is moving perpendicul to the surface. 
+To calculate flux:
+\[
+\iint \limits_S \mathbf{F} \cdot d\mathbf{S} = 
+\iint \limits_D \mathbf{F} \cdot (\mathbf{r}_u \cross \mathbf{r}_v) \, dA
+\]
+
+A surface is oriented whatever way its unit normal vector is facing. A surface
+is considered positive when oriented outwards and negative when oriented inwards.
+If the surface is oriented upwards and defined as $z=g(x,y)$, then the flux is:
+\[
+\iint \limits_D \mathbf{F} \cdot \left\langle -z_x, -z_y, 1 \right\rangle \, dA.
+\]
+If oriented downwards:
+\[
+\iint \limits_D \mathbf{F} \cdot \left\langle z_x, z_y, -1 \right\rangle \, dA.
+\]
+
+
 \end{document}
