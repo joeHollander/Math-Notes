@@ -623,4 +623,29 @@ Also,
 \oint \limits_C \mathbf{F \cdot n} \, ds = \iint \limits_D \mbox{div} \ \mathbf{F}(x,y) \, dA
 \]
 
+Parametric surfaces are denoted like this:
+\[
+\mathbf{r}(u,v) = x(u,v)\mathbf{i} + y(u,v)\mathbf{j} + z(u,v)\mathbf{k}.
+\]
+Grid curves occur when $u$ or $v$ are fixed. To find the tangent plane to the surface at a certain point, find the partial
+derivatives with respect to $u$ and $v$ and then find the normal vector from the cross product. 
+
+To find a surface from revolving a function $y=f(x)$:
+\begin{gather}
+x=x \nonumber \\
+y=f(x)\cos\theta \nonumber \\
+z = f(x)\sin\theta \nonumber.
+\end{gather}
+
+The surface area of a parametric surface defined on $D$:
+\[
+A(S) = \iint \limits_D |\mathbf{r}_u \cross \mathbf{r}_v| \, dA 
+\]
+The surface area of a function $z=f(x,y)$:
+\[
+A(s)= \iint \limits_D \sqrt{1 + \left( \pdv{z}{x} \right) + \left( \pdv{z}{y} \right)} \, dA.
+\]
+For the first formula $D$ is on the $uv$-plane while in the second formula 
+$D$ is on the $xy$-plane.
+
 \end{document}
