@@ -643,11 +643,17 @@ A(S) = \iint \limits_D |\mathbf{r}_u \cross \mathbf{r}_v| \, dA
 \]
 The surface area of a function $z=f(x,y)$:
 \[
-A(s)= \iint \limits_D \sqrt{1 + \left( \pdv{z}{x} \right) + \left( \pdv{z}{y} \right)} \, dA.
+A(s)= \iint \limits_D \sqrt{1 + z_x^2 + z_y^2} \ dA.
 \]
 For the first formula $D$ is on the $uv$-plane while in the second formula 
 $D$ is on the $xy$-plane. A surface is considered smooth if 
 the cross product of its tangent vectors is never the zero vector.
+
+Surface integral formula for a parametric surface:
+\[
+\iint \limits_S f(x,y,z) \, dS = 
+\iint \limits_D f(\mathbf{r}(u,v)) \, |\mathbf{r}_u \cross \mathbf{r}_v| \, dA
+\]
 
 Flux is the volume of a uniform density,
 steady-state (velocity at a point doesn't change with time) fluid that passes
