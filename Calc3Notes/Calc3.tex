@@ -524,15 +524,15 @@ The function $f$ is called a potential function of $\mathbf{F}$.
 
 The formula for a line integral on a curve $C$:
 \[
-\int \limits_C f(x,y,z) \, ds = 
+\int_C f(x,y,z) \, ds = 
 \int_a^b f(x(t), y(t), z(t))
  \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2} \, dt.
 \]
 The line integrals with respect to $x$, $y$, and $z$:
 \begin{gather}
-    \int \limits_C f(x,y,z) \, dx = \int_{a}^{b} f(x(t), y(t), z(t)) \, x'(t) \, dt, \nonumber \\
-    \int \limits_C f(x,y,z) \, dy = \int_{a}^{b} f(x(t), y(t), z(t)) \, y'(t) \, dt, \nonumber \\
-    \int \limits_C f(x,y,z) \, dz = \int_{a}^{b} f(x(t), y(t), z(t)) \, z'(t) \, dt. \nonumber
+    \int_C f(x,y,z) \, dx = \int_{a}^{b} f(x(t), y(t), z(t)) \, x'(t) \, dt, \nonumber \\
+    \int_C f(x,y,z) \, dy = \int_{a}^{b} f(x(t), y(t), z(t)) \, y'(t) \, dt, \nonumber \\
+    \int_C f(x,y,z) \, dz = \int_{a}^{b} f(x(t), y(t), z(t)) \, z'(t) \, dt. \nonumber
 \end{gather}
 To find a parametric representation of a curve, remember that for $0 \le t \le 1$,
 the line segment from $\mathbf{r}_0$ to $\mathbf{r}_1$ is
@@ -542,7 +542,7 @@ the line segment from $\mathbf{r}_0$ to $\mathbf{r}_1$ is
 
 The work done for moving a particle in a vector field $\mathbf{F}$ on a curve $C$ is
 \[
-\int \limits_C \mathbf{F} \cdot d\mathbf{r} = 
+\int_C \mathbf{F} \cdot d\mathbf{r} = 
 \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) \, dt.
 \]
 Work is positive when the vector field aligns with the curve and negative when
@@ -551,7 +551,7 @@ the vector field doesn't align with the curve. Therefore, more work is more nega
 The fundamental theorem of line integrals states: 
 that for a conservative function $\mathbf{F} = \nabla f$,
 \[
-\int \limits_C \mathbf{F} \, d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
+\int_C \mathbf{F} \, d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
 \]
 This also means, for a conservative function, paths are independent.
 This means that a path with the same endpoints and direction
@@ -567,7 +567,7 @@ and has no intersections.
 
 Green's theorem, where $\mathbf{F} = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$:
 \[
-\varointctrclockwise \limits_C \mathbf{F} \, d\mathbf{r} =
+\varointctrclockwise_C \mathbf{F} \, d\mathbf{r} =
 \iint \limits_R [\pdv{Q}{x} - \pdv{P}{y}] \, dA.
 \]
 A clockwise path would be negative of a counter-clockwise path.
@@ -620,7 +620,7 @@ with a vector field:
 
 Also,
 \[
-\oint \limits_C \mathbf{F \cdot n} \, ds = \iint \limits_D \mbox{div} \ \mathbf{F}(x,y) \, dA
+\oint_C \mathbf{F \cdot n} \, ds = \iint \limits_D \mbox{div} \ \mathbf{F}(x,y) \, dA
 \]
 
 Parametric surfaces are denoted like this:
@@ -675,6 +675,13 @@ If oriented downwards:
 \[
 \iint \limits_D \mathbf{F} \cdot \left\langle z_x, z_y, -1 \right\rangle \, dA.
 \]
+
+Stoke's theorem states for a smooth, positively oriented surface
+with smooth boundary $C$ then:
+\[
+\int_C \mathbf{F} \cdot d\mathbf{r} = \iint \limits_S \mbox{div} \ \mathbf{F} \cdot d\mathbf{S}
+\] 
+
 
 
 \end{document}
