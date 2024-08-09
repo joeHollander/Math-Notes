@@ -551,7 +551,7 @@ the vector field doesn't align with the curve. Therefore, more work is more nega
 The fundamental theorem of line integrals states: 
 that for a conservative function $\mathbf{F} = \nabla f$,
 \[
-\int_C \mathbf{F} \, d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
+\int_C \mathbf{F} \cdot d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
 \]
 This also means, for a conservative function, paths are independent.
 This means that a path with the same endpoints and direction
@@ -567,7 +567,7 @@ and has no intersections.
 
 Green's theorem, where $\mathbf{F} = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$:
 \[
-\varointctrclockwise_C \mathbf{F} \, d\mathbf{r} =
+\varointctrclockwise_C \mathbf{F} \cdot d\mathbf{r} =
 \iint \limits_R [\pdv{Q}{x} - \pdv{P}{y}] \, dA.
 \]
 A clockwise path would be negative of a counter-clockwise path.
@@ -676,11 +676,13 @@ If oriented downwards:
 \iint \limits_D \mathbf{F} \cdot \left\langle z_x, z_y, -1 \right\rangle \, dA.
 \]
 
-Stoke's theorem states for a smooth, positively oriented surface
+Stokes' theorem states for a smooth, positively oriented surface
 with smooth boundary $C$ then:
 \[
-\int_C \mathbf{F} \cdot d\mathbf{r} = \iint \limits_S \mbox{div} \ \mathbf{F} \cdot d\mathbf{S}
+\int_C \mathbf{F} \cdot d\mathbf{r} = \iint \limits_S \mbox{curl} \ \mathbf{F} \cdot d\mathbf{S}.
 \] 
+Stokes' theorem is a special case of Green's theorem and represents
+the relationship between the boundary and the curl (a derivative) of $\mathbf{F}$.
 
 
 
