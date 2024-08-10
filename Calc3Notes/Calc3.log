@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  9 AUG 2024 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  10 AUG 2024 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3"
-(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Calc3Notes/Calc3.tex
+**c:/Users/semic/OneDrive/Desktop/Math-Notes/Calc3Notes/Calc3
+(c:/Users/semic/OneDrive/Desktop/Math-Notes/Calc3Notes/Calc3.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
@@ -44,7 +44,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ) (c:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
  (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-07-20 L3 programming layer (loader) 
+Package: expl3 2024-05-27 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
@@ -264,19 +264,19 @@ Package pdftex.def Info: Images/PolarDoubleIntegration.png  used on input line 3
 [19] (./Calc3.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2939 strings out of 475495
- 43671 string characters out of 5776743
- 1938960 words of memory out of 5000000
- 25564 multiletter control sequences out of 15000+600000
+ 2939 strings out of 475501
+ 43648 string characters out of 5776864
+ 1938908 words of memory out of 5000000
+ 25558 multiletter control sequences out of 15000+600000
  573937 words of font info for 103 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,19n,93p,391b,222s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/hollanderj/.texlive2024/texmf-var/fonts/pk/ljfour/public/esint/esint10.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Calc3.pdf (19 pages, 339204 bytes).
+ 79i,19n,93p,382b,222s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/semic/.texlive2024/texmf-var/fonts/pk/ljfour/public/esint/esint10.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Calc3.pdf (19 pages, 339478 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
