@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\title{Investment Management Course Notes}
+\author{Joe Hollander}
+\date{Summer 2024} 
+
+\begin{document}
+\maketitle
+
+\section[1.1]{Fundamentals of risk and returns}
+
+Compounding returns with different return rates:
+\[
+(1 + r_1)(1 + r_2) - 1.
+\]
+Compounding returns with the same return rate:
+\[
+((1 + r)^t - 1). 
+\]
+To compare different time period standard deviations multiply (or divide)
+by the square root of the number of time periods.
+The sharpe ratio:
+\[
+\frac{R_p-R_f}{\sigma_p}.
+\]
+Pandas standard deviation method uses the sample
+standard deviation and not the population standard
+deviation. Similar to the sharpe ratio, the calmar
+ratior is a risk adjusted return where risk is measured
+by drawdown. Use index method to\_period to convert from
+datetime to period. Use series method cummax to find the
+highest value for each timestep. Drawdown is then: 
+\[
+\frac{Value - Previous Peak}{Previous Peak}.
+\]
+
+
+ 
+
+
+\end{document}
