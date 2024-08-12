@@ -27,6 +27,7 @@ The sharpe ratio:
 \[
 \frac{R_p-R_f}{\sigma_p}.
 \]
+
 Pandas standard deviation method uses the sample
 standard deviation and not the population standard
 deviation. Similar to the sharpe ratio, the calmar
@@ -38,7 +39,65 @@ highest value for each timestep. Drawdown is then:
 \frac{Value - Previous Peak}{Previous Peak}.
 \]
 
- 
+\section[1.2]{Beyond The Gaussian Case}
 
+Skew and kurtosis are the third and fourth moments
+of a distribution respectively. A distribution with
+a greater than three kurtosis is considered fat tailed.
+
+The Jarque Bera is a test that determines whether 
+or not a sample distribution fits a normal distribution
+based on its skew and kurtosis. If the test is close
+to zero it signals that the distribution is close 
+to normal. The test:
+\[
+JB = \frac{n}{6}\left(S^2 + \frac{1}{4}(K-3)^2\right).
+\]
+
+Semi-deviation is the volatility of below-average
+or below-zero returns:
+\[
+\sigma_{semi} = 
+\sqrt{\frac{1}{N}\sum_{R_t\le\bar{R}}(R_t-\bar{R})^2}.
+\]
+Value at risk (VaR) represents the maximum
+"expected" loss over a time period. A 99\%
+one month VaR gives the maximum loss excluding
+the 1\% of worst cases. The VaR is also typically
+expressed as a positive number. The conditional
+value at risk (CVaR) is the expected loss beyond
+VaR:
+\[
+CVar = -E(R \, | \, R \le -VaR).
+\]
+
+Setting ddof as zero for pandas standard deviation
+calculates the population standard deviation.
+
+There are four methods to calculate VaR.
+The historical methodology calculates the VaR 
+from the historical outcomes. The parametric gaussian
+methodology assumes a gaussian distribution. In
+this methodology the VaR is simple to calculate:
+\[
+VaR_\alpha = -(\mu + z_\alpha \sigma),
+\]
+where $z_\alpha$ is the $\alpha$-quantile of the
+normal distribution with mean zero and standard
+deviation one. The gaussian is almost inaccurate.
+A parametric non-gaussian distribution doesn't
+assume gaussian. The Cornish-Fisher VaR is a
+semi-parametric approach. The expansion states:
+\[
+\tilde{z_\alpha} = z_\alpha + 
+\frac{1}{6}(z_\alpha^2 - 1)S + 
+\frac{1}{24}(z_\alpha^3 - 3z_\alpha)(K-3) -
+\frac{1}{36}(2z_\alpha^3 - 5z_\alpha)S^2,
+\] 
+where $\tilde{z_\alpha}$ is the updated quantile.
+
+Use numpy's percentile for historical VaR and
+scipy.stats' ppf function for gaussian, parametric,
+and Cornish-Fisher VaR.
 
 \end{document}
