@@ -100,7 +100,7 @@ Use numpy's percentile for historical VaR and
 scipy.stats' ppf function for gaussian, parametric,
 and Cornish-Fisher VaR.
 
-\section[1.3]{Optimization and the Efficient Frontier}
+\section[2.1]{Optimization and the Efficient Frontier}
 
 The return of a portfolio is equal to the 
 weighted average of the return of the components.
@@ -116,7 +116,7 @@ created from the assets with a given correlation.
 Each point on this line represents the best return
 for each volatility. 
 
-\section[1.4]{Implementing Markowitz}
+\section[2.2]{Implementing Markowitz}
 
 The capital market line is the tangent line
 from the risk free rate to the efficient frontier.
@@ -129,5 +129,56 @@ expected returns, some use the global minimum variance
 (GMV), which is the nose of the efficient frontier. 
 Even small estimation errors result in large portfolio
 changes. 
+
+\section[3.1]{CPPI and Drawdown constraints}
+
+You cannot diversify out all risk. Dynamic
+hedging allows for upside exposure with 
+less downside exposure. Correlation often rises when
+returns fall. 
+
+The CPPI procedure allows for the construction 
+of convex payoffs. The risky asset is a multiplier multiplied by
+the cushion. The CPPI is the riskless asset plus the
+risky asset. The cushion is then the CPPI minus the protection
+floor set in place. Therefore, as the cushion decreases, more
+of the portfolio is riskless assets, and as the cushion increases,
+more of the portfolio is risky assets. 
+
+\begin{center}
+    \includegraphics[width=12cm,height=12cm, keepaspectratio]{CPPI.png}
+\end{center}
+
+\noindent Gap risk occurs when trading discretely.
+
+Given a max drawdown contraint 
+\[V_t > \alpha M_t,\] where: $V_t$ is the value of the portfolio,
+$M_t$ is the peak of the portfolio between time $0$ and time $t$,
+and $1-\alpha$ is the maximum acceptable drawdown. Then choosing
+a multiplier multiplied by $M_t \alpha$ will also provide a convex
+payoff. 
+
+A cap can also be used to reduce risk taking passed a value. 
+In this system, if the floor is closer, the distance to the floor
+is used while if the ceiling cap is closer, the distance to the
+ceiling is used. 
+
+Instead of constructing a new DataFrame using an array,
+use the DataFrame method reindex\_like.
+
+We can model the return process of a stock $S_t$
+with risk-free rate $r$, sharpe ratio $\lambda$,
+and volatility $\sigma$: 
+\[
+\frac{dS_t}{S_t} = 
+(r + \sigma \lambda)dt + \sigma dW_t.
+\]
+For discrete time:
+\[
+\frac{S_{t+dt} - S_t}{S_t} =
+(r + \sigma \lambda)dt +
+\sigma \sqrt{dt} \, \xi_t.
+\]
+
 
 \end{document}
