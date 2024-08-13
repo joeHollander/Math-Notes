@@ -180,5 +180,29 @@ For discrete time:
 \sigma \sqrt{dt} \, \xi_t.
 \]
 
+\section[3.2]{Monte Carlo}
+
+A more general model of a return process
+with the same variables: 
+\[
+\frac{dS_t}{S_t} = 
+\left(r_t + \sqrt{V_t} \, \lambda_t^S\right)dt +
+\sqrt{V_t} \, dW_t^S.
+\]
+
+We can also define the risk-free rate and variance
+in terms of brownian motion: 
+\begin{gather}
+    dr_t = a(b-r_t)dt + \sigma_r dW_t^r \nonumber \\
+    dV_t = \alpha(\bar{V} - V_t)dt + 
+    \sigma_V \sqrt{V_t} \, dW_t^V \nonumber
+\end{gather}
+Here, $b$ is the long term mean of the risk-free rate.
+Both of these processes are mean reverting. 
+
+In a CPPI system, raising the risky-asset multiplier
+when the market is less volatile and vice-versa results
+in less breaches of the floor and less need for 
+rebalancing more frequently. 
 
 \end{document}
