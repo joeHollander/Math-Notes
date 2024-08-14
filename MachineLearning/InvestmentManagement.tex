@@ -205,4 +205,36 @@ when the market is less volatile and vice-versa results
 in less breaches of the floor and less need for 
 rebalancing more frequently. 
 
+\section[4.1]{Asset-Liability Management}
+
+The funding ratio $F_t = {A_t}/{L_t}$ and surplus
+$S_t = A_t - L_t$ is what really matters
+for asset-liability management.  
+
+The present value of a set of liabilities is
+\[
+PV(L) = \sum_{i=1}^k B(t_i)L_i,
+\]
+and if the yield curve is flat, 
+the price of a pure discount bond is 
+\[
+B(t) = \frac{1}{(1+r)^t}, 
+\]
+where $r$ is the annual rate of interest. 
+
+Liability-hedging portfolios attempt to match the cashflows of
+the liability side in order to pay liabilities in the future. 
+Often, cash-flow matching is not feasible or practicle, so one may
+use factor exposure matching. These factor exposure matching portfolios
+often use bonds to gain similar exposure to interest rates that affect
+liabilities. 
+
+The Cox Ingersoll Ross (CIR) model that is used to model interest rates:
+\[
+dr_t = a(b-r_t)dt + \sigma \sqrt{r_t} \, dW_t,
+\]
+where $b$ is the long term mean of the interest rate. 
+T
+
+
 \end{document}
