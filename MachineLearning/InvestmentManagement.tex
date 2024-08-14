@@ -3,6 +3,7 @@
 \usepackage{physics}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+%\usepackage{titlesec}
 
 \title{Investment Management Course Notes}
 \author{Joe Hollander}
@@ -11,7 +12,8 @@
 \begin{document}
 \maketitle
 
-\section[1.1]{Fundamentals of risk and returns}
+
+\section*{1.1 Fundamentals of risk and returns}
 
 Compounding returns with different return rates:
 \[
@@ -39,7 +41,7 @@ highest value for each timestep. Drawdown is then:
 \frac{Value - Previous Peak}{Previous Peak}.
 \]
 
-\section[1.2]{Beyond The Gaussian Case}
+\section*{1.2 Beyond The Gaussian Case}
 
 Skew and kurtosis are the third and fourth moments
 of a distribution respectively. A distribution with
@@ -100,7 +102,7 @@ Use numpy's percentile for historical VaR and
 scipy.stats' ppf function for gaussian, parametric,
 and Cornish-Fisher VaR.
 
-\section[2.1]{Optimization and the Efficient Frontier}
+\section*{2.1 Optimization and the Efficient Frontier}
 
 The return of a portfolio is equal to the 
 weighted average of the return of the components.
@@ -116,7 +118,7 @@ created from the assets with a given correlation.
 Each point on this line represents the best return
 for each volatility. 
 
-\section[2.2]{Implementing Markowitz}
+\section*{2.2 Implementing Markowitz}
 
 The capital market line is the tangent line
 from the risk free rate to the efficient frontier.
@@ -130,7 +132,7 @@ expected returns, some use the global minimum variance
 Even small estimation errors result in large portfolio
 changes. 
 
-\section[3.1]{CPPI and Drawdown constraints}
+\section*{3.1 CPPI and Drawdown constraints}
 
 You cannot diversify out all risk. Dynamic
 hedging allows for upside exposure with 
@@ -180,7 +182,7 @@ For discrete time:
 \sigma \sqrt{dt} \, \xi_t.
 \]
 
-\section[3.2]{Monte Carlo}
+\section*{3.2 Monte Carlo}
 
 A more general model of a return process
 with the same variables: 
@@ -205,7 +207,7 @@ when the market is less volatile and vice-versa results
 in less breaches of the floor and less need for 
 rebalancing more frequently. 
 
-\section[4.1]{Asset-Liability Management}
+\section*{4.1 Asset-Liability Management}
 
 The funding ratio $F_t = {A_t}/{L_t}$ and surplus
 $S_t = A_t - L_t$ is what really matters
@@ -234,7 +236,24 @@ The Cox Ingersoll Ross (CIR) model that is used to model interest rates:
 dr_t = a(b-r_t)dt + \sigma \sqrt{r_t} \, dW_t,
 \]
 where $b$ is the long term mean of the interest rate. 
-T
+
+Since performance generation and hedging are incompatible aims,
+creating a performance-seeking portfolio (PSP) and
+a liability-hedging portfolio (LHP) is the best option.
+This two portfolio style is called liability-driven investing (LDI).
+The formal expression of the goal is:
+\[
+\max_w E \left[u\left(\frac{A_t}{L_t}\right)\right]
+=> w^* = \frac{\lambda_{PSP}}{\gamma \sigma_{PSP}}w^{PSP}
++ \beta_{L,LHP} \left(1-\frac{1}{\gamma}\right)
+w^{LHP}.
+\]
+The greeks of LDI are these greek letters. $\lambda_{PSP}$ 
+is the sharpe ratio of the PSP, $\gamma$ is the risk aversion,
+$\sigma_{PSP}$ is the standard deviation of the PSP,
+$\beta_{L,LHP}$ is the beta of the liabilities with respect to the LHP.
+
+\section*{1.1 Introduction to Machine Learning}
 
 
 \end{document}
