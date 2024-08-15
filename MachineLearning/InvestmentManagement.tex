@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 %\usepackage{titlesec}
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \title{Investment Management Course Notes}
 \author{Joe Hollander}
@@ -277,8 +278,67 @@ Investing with an aim for diverse factor exposure is better than
 investing for general diversification as different asset classes
 may have the same factors. 
 
+The simplest factor model, the market model:
+\[
+R_{i,t} - r_{f,t} = \alpha_i + \beta_i(R_{M,t} - r_{f,t}) + \epsilon_{i,t},
+\]
+where  $r$ is the risk-free rate, $R_{i, t}$ is the return of the specific asset,
+and $R_{M,t}$ is the return of the market. The explanatory 
+power or $R^2$, is the part of the variance explained by the 
+factor model: 
+\[
+R^2 = \frac{\beta_i^2 \sigma_M^2}{\sigma_i^2}.
+\]
 
+A multi-factor model then relates the excess return of the 
+asset to the excess return of other factors:
+\[
+R_{i,t}-r_{f,t} = \alpha_i + \beta_{i,1}F_{1,t} + ... + \beta_{i,k}F_{k,t} + \epsilon_{i,t}.
+\] 
+Fama and French's 1992 model used this to show that stocks'
+market cap, market size, and value were statistically significant 
+in predicting returns. The momentum factor is also a highly
+recognized factor. 
 
+Instead of calculating covariance for a large number of assets,
+we can estimate covariance as a function of exposure to the factors:
+\begin{gather}
+    \sigma_{ij} = cov(R_i, R_j) = \sum_{k=1}^K \beta_{ik} \beta_{jk} \sigma_k \nonumber \\  
+    \sigma_{ii} = cov(R_i, R_i) = \sum_{k=1}^K \beta_{ik}^2 \sigma_{F_k}^2 \nonumber.
+\end{gather}
+This assumes uncorrelated factors and uncorrelated residuals, but 
+it also leads to less estimation errors and overfitting.
 
+\section*{2.2 Estimation of Factor Models}
+
+A penalty method called ridge regression is used to prevent 
+overfitting from overly high coefficients. In the equation:
+\[
+\hat{\beta}(\lambda) \argmin_\beta \{|| y - X\beta ||^2 + \lambda ||\beta||^2\},
+\]
+$\lambda$ is the penalty term and as the $||\beta||$, the normed sum of coefficients,
+increases the model is penalized. The lasso method is similar, 
+except the normed $\beta$ isn't squared. Finding a middleground
+penalty term $\lambda$ is important.
+
+Train and test, a cross-validation method, involves testing on
+a different subset of the data and taking the average of the performance.
+Each subset is often called a fold. 
+
+Penalty terms are one type of shrinkage. Stein's paradox states
+that when estimating three or more paramaters, the best model
+is the average of three parameters as this lowers variance
+and minimizes the mean squared error. This shows that biasing
+and shrinking are useful in minimizing error.
+
+In scikit-learn, instead of $\lambda$ they use
+\[
+\alpha = \frac{\lambda}{2n}. 
+\]
+Additionally, the formulas for their ridge and lasso regressions
+are different. 
+
+Best subset regression is a regression method that constrains
+the number of factors.
 
 \end{document}
