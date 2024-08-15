@@ -314,7 +314,7 @@ it also leads to less estimation errors and overfitting.
 A penalty method called ridge regression is used to prevent 
 overfitting from overly high coefficients. In the equation:
 \[
-\hat{\beta}(\lambda) \argmin_\beta \{|| y - X\beta ||^2 + \lambda ||\beta||^2\},
+\hat{\beta}(\lambda) = \argmin_\beta \{|| y - X\beta ||^2 + \lambda ||\beta||^2\},
 \]
 $\lambda$ is the penalty term and as the $||\beta||$, the normed sum of coefficients,
 increases the model is penalized. The lasso method is similar, 
@@ -340,5 +340,31 @@ are different.
 
 Best subset regression is a regression method that constrains
 the number of factors.
+
+\section*{3.1 Measuring Diversification}
+
+Unsupervised learning can be used to more accurately measure
+diversification. This is especially useful as diversification
+can change over time.
+
+The effective number of constinuents can be measured as such:
+\[
+ENC \equiv \frac{1}{\sum_{i=1}^{N}w_i^2}.
+\]
+This shows that because the S\&P 500 is market cap weighted,
+it only has about 100 effective constituents. Instead of 
+measuring a portfolio as a portfolio of assets, we can measure
+it as a portfolio of factor exposure. The effective number of
+bets is then given by:
+\[
+ENB = \frac{1}{\sum_{i=1}^{N}p_k^2},
+\]
+where \[p_k = \frac{w_{F_k}^2\sigma_{F_k}^2}{\sigma_p^2}.\]
+In the former equation, $\sigma_p^2$ is the variance of the
+portfolio.
+
+\section*{3.2 Maximizing Diversification Benefits}
+
+
 
 \end{document}
