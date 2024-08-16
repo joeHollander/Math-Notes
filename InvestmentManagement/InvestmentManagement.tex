@@ -392,8 +392,29 @@ propogation algorithm while the number of clusters must be known
 for k-means. Multi dimensional scaling allows for visulization 
 of multi dimensional data in to two dimensions. 
 
-\section{4.1 Varying Market Conditions}
+\section*{4.1 Varying Market Conditions}
 
+Since correlations increase in crash periods,
+identifying these regimes can be helpful with
+risk management and portfolio choice.
+
+A GARCH model tries to model the current variance
+based on the long-run variance rate $V_L$:
+\[
+\sigma_T^2 = \gamma V_L + 
+\sum_{t=1}^T \alpha_t R_t^2 + \beta \sigma_{T-1}^2,
+\]
+where
+\[ \gamma + \beta + \sum_{t=1}^T \alpha_t = 1,\]
+and \[ \alpha_t = \frac{\lambda^{T-t}}{\sum_{t=1}^T \lambda^{T-t}.}\]
+The lower the lambda the higher the weight assigned to recent
+observations. 
+
+A markov regime switching model implies that volatility is
+not a function of time but a function of a state. 
+The parameters of the transition matrix can be estimated 
+my maximizing log likelihood. Machine learning can also be used
+for non-parametric identification.
 
 
 \end{document}
