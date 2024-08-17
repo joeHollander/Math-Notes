@@ -416,5 +416,18 @@ The parameters of the transition matrix can be estimated
 my maximizing log likelihood. Machine learning can also be used
 for non-parametric identification.
 
+\section*{4.2 Regime Switching with Machine Learning}
+
+Even two regime models perform much better at forecasting
+the tails of returns. A long term model is one that uses
+a historical transition matrix. The optimization problem to solve
+is this:
+\[
+\hat{\beta} = \argmin_\beta  || x-\beta||_2^2 + \lambda||D\beta||_1. 
+\]
+In this equation, $\hat{\beta}$ is the updated values of the timeseries.
+If we increase $\lambda$ the timeseries must be flat, and if we 
+decrease $\lambda$ to zero than the series must be equal to $x$. 
+
 
 \end{document}
