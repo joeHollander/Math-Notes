@@ -429,5 +429,32 @@ In this equation, $\hat{\beta}$ is the updated values of the timeseries.
 If we increase $\lambda$ the timeseries must be flat, and if we 
 decrease $\lambda$ to zero than the series must be equal to $x$. 
 
+\section*{5.1 Traditional Statistics and Machine Learning}
+
+Traditional regression models are often ineffective
+at forecasting crash periods. 
+
+
+Logisitc regression is often used for binary classification as 
+it gives a probabliity measure: 
+\[
+h_\beta = \frac{1}{1+e^{-(\beta_0 + \beta x)}}.
+\]
+Typically, the final classification is done by choosing 
+a threshold value. To learn this model we maximize
+the maximum-likelihood where $y_i$ is the predicted class/state:
+\[
+J(\beta) = \sum_{i=1}^N y_i\log(h_\beta(x_i)) + (1-y_i)\log(1-h_\beta(x_i)).
+\]
+
+To create sparsity, decrease variance, improve a model, 
+and prevent overfitting, there are many ways. 
+Elastic net, a model with two penalty terms, is best when features
+are correlated. Stepwise regression, a model that increases the degree of each
+polynomial term, is another alternative. Subset selection,
+a method where the model is built with only a certain amount of 
+paramaters, is another method to reduce overfitting. Using an ensemble method
+to combine multiple models is also useful. 
+
 
 \end{document}
