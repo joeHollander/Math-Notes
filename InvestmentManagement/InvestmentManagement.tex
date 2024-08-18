@@ -456,5 +456,21 @@ a method where the model is built with only a certain amount of
 paramaters, is another method to reduce overfitting. Using an ensemble method
 to combine multiple models is also useful. 
 
+For k-nearest neighbors, the k defines how many neighbors
+will be used to classify the point. Training errors often increase
+with k. The algorithm can use euclidean distance (L-2 norm)
+or manhattan distance (L-1 norm). 
+
+A decision tree divides the data into subsets on feature at a time.
+It does this by selecting the feature level that best splits
+the data. The algorithm can be used for regression or classification.
+
+Boosting is a machine learning algorithm that combines multiple
+models. It does this by creating a weak learning model and then
+creating more models that have loss functions that reward
+getting high error datapoints more correct. It then iteratively 
+creates more models and finds a weighted average of the prediction.
+The higher the error of the model, the lower the weight in the voting
+system. 
 
 \end{document}
