@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  17 AUG 2024 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  21 AUG 2024 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/InvestmentManagement/InvestmentManagement"
-(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/InvestmentManagement/InvestmentManagement.tex
+**c:/Users/semic/OneDrive/Desktop/Math-Notes/InvestmentManagement/InvestmentManagement
+(c:/Users/semic/OneDrive/Desktop/Math-Notes/InvestmentManagement/InvestmentManagement.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
@@ -44,7 +44,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ) (c:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
  (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-07-20 L3 programming layer (loader) 
+Package: expl3 2024-05-27 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
@@ -172,14 +172,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 [2]
-<CPPI.png, id=20, 739.76375pt x 340.27126pt>
-File: CPPI.png Graphic file (type png)
-<use CPPI.png>
-Package pdftex.def Info: CPPI.png  used on input line 152.
+<Images/CPPI.png, id=20, 739.76375pt x 340.27126pt>
+File: Images/CPPI.png Graphic file (type png)
+<use Images/CPPI.png>
+Package pdftex.def Info: Images/CPPI.png  used on input line 152.
 (pdftex.def)             Requested size: 341.43552pt x 157.05107pt.
 
 
-[3 <./CPPI.png (PNG copy)>]
+[3 <./Images/CPPI.png (PNG copy)>]
 
 [4]
 
@@ -194,17 +194,17 @@ Package pdftex.def Info: CPPI.png  used on input line 152.
 [9] (./InvestmentManagement.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2708 strings out of 475495
- 39388 string characters out of 5776743
- 1934960 words of memory out of 5000000
- 25353 multiletter control sequences out of 15000+600000
+ 2708 strings out of 475501
+ 39414 string characters out of 5776864
+ 1934908 words of memory out of 5000000
+ 25347 multiletter control sequences out of 15000+600000
  565317 words of font info for 65 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,9n,93p,416b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,9n,93p,407b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 Output written on InvestmentManagement.pdf (9 pages, 186377 bytes).
 PDF statistics:
