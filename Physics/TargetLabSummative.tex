@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\title{Target Lab Summative}
+\author{Joe Hollander}
+\date{Oct 2024}
+
+\begin{document}
+\maketitle 
+
+
+16 velocities were measured at the edge of the table. 
+The mean of the measurements was approximately $1.071 \si{m\per\second}$ and the median was $1.073\si{m\per\second}$. 
+Calculations were done using the average of the mean and median, which was $1.0716 \si{m\per\second}$, in an attempt to suppress the effects of outliers. 
+First, finding how long the sphere will be in the air using the position equation :
+\[
+y_f = \frac{1}{2}at^2 + v_yt + y_0.
+\]
+Here, the $y$-component of velocity is zero,
+the accleration of gravity $a = -9.81 \si{m\per\second^2}$ (negative since positive $y$-direction is considered up), the starting position $y_0 = 0.915 \, \text{meters}$,
+and the final $y$ position is $y_f = 0.145  \, \text{meters}$.
+Therfore the equation is 
+\[
+0.145 = -4.905t^2 + 0.915, 
+\]
+and solving for t yields 
+$t = \sqrt{0.77/4.905} \approx 0.40 \, \text{seconds}.$
+This means that the marble will be in the air for approximately 0.40 seconds. 
+
+Next, finding the distance the sphere will travel using the position equation again:
+\[
+x_f = \frac{1}{2}at^2 + v_xt + x_0.
+\]
+In this situation, the $x$-component of velocity is our initial velocity $v_x = 1.0716 \si{m\per\second}$,
+the time in the air is the same as above, 
+and the initial position $x_0 = 0 \, \text{meters}$ since we're measuring from the edge of the table.
+The final position is therefore 
+\[
+x_f = 1.0716\sqrt{0.77/4.905} \approx 0.42 \, \text{meters}. 
+\]
+
+Placing the ring 42 cm away from the edge yielded the video attached. 
+
+\medskip
+
+Velocity Measurements (m/s):
+1.051, 1.058, 1.063, 1.063, 1.065, 1.066, 1.069, 1.072, 1.073, 1.077, 1.077, 1.078, 1.078, 1.08, 1.081, 1.082
+
+
+\end{document}
