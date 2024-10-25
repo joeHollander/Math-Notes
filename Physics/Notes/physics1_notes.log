@@ -1,12 +1,16 @@
+<<<<<<< HEAD:Physics/Notes/physics1_notes.log
 This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  25 OCT 2024 13:35
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  23 OCT 2024 22:53
+>>>>>>> ba97b7446f4c9e1cb03ca86dee7a2c4b52ac3ddc:Physics/Notes/notes.log
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Physics/Notes/notes"
-(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Physics/Notes/notes.tex
+**c:/Users/semic/OneDrive/Desktop/Math-Notes/Physics/Notes/notes
+(c:/Users/semic/OneDrive/Desktop/Math-Notes/Physics/Notes/notes.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
@@ -95,59 +99,14 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-09-30 v3.3.22 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count280
-\l__siunitx_number_exponent_fixed_int=\count281
-\l__siunitx_number_min_decimal_int=\count282
-\l__siunitx_number_min_integer_int=\count283
-\l__siunitx_number_round_precision_int=\count284
-\l__siunitx_number_lower_threshold_int=\count285
-\l__siunitx_number_upper_threshold_int=\count286
-\l__siunitx_number_group_first_int=\count287
-\l__siunitx_number_group_size_int=\count288
-\l__siunitx_number_group_minimum_int=\count289
-\l__siunitx_angle_tmp_dim=\dimen151
-\l__siunitx_angle_marker_box=\box54
-\l__siunitx_angle_unit_box=\box55
-\l__siunitx_compound_count_int=\count290
-\l__siunitx_table_tmp_box=\box56
-\l__siunitx_table_tmp_dim=\dimen152
-\l__siunitx_table_column_width_dim=\dimen153
-\l__siunitx_table_integer_box=\box57
-\l__siunitx_table_decimal_box=\box58
-\l__siunitx_table_uncert_box=\box59
-\l__siunitx_table_before_box=\box60
-\l__siunitx_table_after_box=\box61
-\l__siunitx_table_before_dim=\dimen154
-\l__siunitx_table_carry_dim=\dimen155
-\l__siunitx_unit_tmp_int=\count291
-\l__siunitx_unit_position_int=\count292
-\l__siunitx_unit_total_int=\count293
- (c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
-\col@sep=\dimen156
-\ar@mcellbox=\box62
-\extrarowheight=\dimen157
-\NC@list=\toks23
-\extratabsurround=\skip54
-\backup@length=\skip55
-\ar@cellbox=\box63
-)) (c:/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/01/14 v1.3d Standard LaTeX Color (DPC)
- (c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
- (c:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
-) (c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count294
-\l__pdf_internal_box=\box64
+\l__color_backend_stack_int=\count280
+\l__pdf_internal_box=\box54
 ) (./notes.aux)
 \openout1 = `notes.aux'.
 
+<<<<<<< HEAD:Physics/Notes/physics1_notes.log
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
@@ -177,6 +136,23 @@ LaTeX Font Info:    ... okay on input line 10.
 \everyMPtoPDFconversion=\toks25
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+>>>>>>> ba97b7446f4c9e1cb03ca86dee7a2c4b52ac3ddc:Physics/Notes/notes.log
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -190,22 +166,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4698 strings out of 475495
- 116371 string characters out of 5776743
- 1928960 words of memory out of 5000000
- 27361 multiletter control sequences out of 15000+600000
- 564261 words of font info for 59 fonts, out of 8000000 for 9000
+ 1295 strings out of 475501
+ 19532 string characters out of 5776864
+ 1931908 words of memory out of 5000000
+ 23973 multiletter control sequences out of 15000+600000
+ 566579 words of font info for 69 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
+<<<<<<< HEAD:Physics/Notes/physics1_notes.log
  56i,6n,70p,283b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/hollanderj/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 Output written on notes.pdf (1 page, 59624 bytes).
+=======
+ 56i,6n,65p,254b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/semic/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on notes.pdf (1 page, 89672 bytes).
+>>>>>>> ba97b7446f4c9e1cb03ca86dee7a2c4b52ac3ddc:Physics/Notes/notes.log
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
