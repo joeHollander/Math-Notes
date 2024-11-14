@@ -1,0 +1,105 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+
+% Custom section command
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1.5}{*0.5}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\name}[1]{
+  \begin{center}
+    \Huge\textbf{#1}
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\contact}[3]{
+  \begin{center}
+    #1 \\
+    #2 \\
+    #3
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\role}[4]{
+  \begin{center}
+  \textbf{#1} \hfill \textbf{#2} \\
+  \textit{#3} \hfill \textit{#4}
+  \end{center}
+}
+
+\begin{document}
+
+\name{Joe Hollander}
+\vspace{-0.5em}
+\contact{185 Rye Circle, South Burlington, VT 05403}{(802) 233-0910}{Joe.H.Hollander@gmail.com}
+
+\vspace{-0.5em}
+\begin{center}
+\textit{Financial Advisor with 7+ years of experience delivering financial/investment advisory services to high value clients. Proven success in managing multi-million dollar portfolios, driving profitability, and increasing ROI through skillful strategic planning, consulting, and financial advisory services.}
+\end{center}
+
+\section{EDUCATION}
+
+\vspace{0.5em}
+\role{South Burlington High School}{South Burlington, VT}{High Honors (Current GPA: 4.0/4.0)}{August 2022--Present}   
+\begin{flushleft}
+Relevant Coursework: AP Calculus BC (Exam Score: 5/5)
+\end{flushleft}
+
+\role{University of Vermont}{Burlington, VT}{GPA: 4.0/4.0}{July 2024}
+\begin{flushleft}
+  Relevant Coursework: Calculus 3
+  \end{flushleft}
+\section{PROFESSIONAL EXPERIENCE}
+
+\vspace{1em}
+\role{FAR POST SOCCER CLUB}{South Burlington, VT}{Referee and Front Desk Management}{November 21--Present}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Deliver financial advice to clients, proposing strategies to achieve short- and long-term objectives for investments, insurance, business and estate planning with minimal risk
+  \item Develop, review, and optimize investment portfolios for 300+ high value clients with over \$190M AUM (Assets Under Management)
+  \item Ensure maximum client satisfaction by providing exceptional and personalized service, enhancing client satisfaction ratings from 88\% to 99.9\% in less than 6 months
+  \item Work closely with specialists from multiple branches, managing investment portfolios for over 800 clients with over \$25M in assets under care
+\end{itemize}
+
+\role{SUNTRUST INVESTMENT SERVICES, INC.}{New Orleans, LA}{Financial Advisor}{July 2017--August 2020}
+\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+  \item Served as knowledgeable financial advisor to clients, managing an over \$20.75M investment portfolio of 90+ individual and corporate clients
+  \item Devised and applied a new training and accountability program that increased productivity from \#10 to \#3 in the region in less than 2 year period
+  \item Partnered with cross-functional teams in consulting with clients to provide asset management risk strategy and mitigation, which increased AUM by 50\%
+\end{itemize}
+
+\role{MAVERICK CAPITAL MANAGEMENT}{New Orleans, LA}{Financial Advisor}{July 2014--August 2017}
+\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+  \item Served as the primary point of contact for over 15 clients
+  \item Managed the portfolios of several major clients with over \$8.5M in total assets
+\end{itemize}
+
+\vspace{1em}
+\section{SKILLS}
+
+\vspace{0.5em}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Proficient in Python 3 (NumPy, Pandas, Matplotlib, Scikit-Learn)
+  \item Git
+  \item Oracle Cloud 
+  \item Docker 
+\end{itemize}
+
+\end{document}
