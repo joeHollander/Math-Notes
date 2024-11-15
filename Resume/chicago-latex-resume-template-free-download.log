@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  14 NOV 2024 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.3)  15 NOV 2024 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/chicago-latex-resume-template-free-download"
-(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/chicago-latex-resume-template-free-download.tex
+**"c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Resume/chicago-latex-resume-template-free-download"
+(c:/Users/hollanderj/Desktop/Math Notes/Math-Notes/Resume/chicago-latex-resume-template-free-download.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -311,34 +311,41 @@ Package hyperref Info: Link coloring OFF on input line 47.
 \makeMPintoPDFobject=\count291
 \everyMPtoPDFconversion=\toks24
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 74.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 75.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [1
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./chicago-latex-resume-template-free-download.aux)
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \end{document}
+                     [2] (./chicago-latex-resume-template-free-download.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `chicago-latex-resume-template-free-download.out' has not changed.
-(rerunfilecheck)             Checksum: EF872E89FF876DB35030AA43F89785CA;322.
+(rerunfilecheck)             Checksum: D39E97EB546F341E8AE4AA5B268C1532;405.
  ) 
 Here is how much of TeX's memory you used:
- 9982 strings out of 475495
- 153711 string characters out of 5776743
+ 9984 strings out of 475495
+ 153752 string characters out of 5776743
  1944960 words of memory out of 5000000
- 32542 multiletter control sequences out of 15000+600000
+ 32543 multiletter control sequences out of 15000+600000
  581761 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,5n,79p,428b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,435b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on chicago-latex-resume-template-free-download.pdf (1 page, 116845 bytes).
+Output written on chicago-latex-resume-template-free-download.pdf (2 pages, 118793 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
