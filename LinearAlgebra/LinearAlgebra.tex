@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{array, esint}
+
+\title{Linear Algebra Notes}
+\author{Joe Hollander}
+\date{Winter 2024}  
+
+\begin{document}
+\maketitle 
+
+\newcommand{\tdv}[2]{
+    \begin{bmatrix}
+        #1 \\
+        #2
+    \end{bmatrix}}
+
+\newcommand{\iltdv}[2]{
+    \begin{bsmallmatrix}
+        #1 \\
+        #2
+    \end{bsmallmatrix}}
+
+In order to change basis into terms of two orthogonal vectors $b_1 = \iltdv{a}{b}$ and $b_2 = \iltdv{c}{d}$, 
+solve this equation:
+\[
+\mathbf{r} = x\tdv{a}{b} + y\tdv{c}{d},
+\]
+where then new vector will be $\iltdv{x}{y}$. 
+First, find calculate the dot product of $\mathbf{r}$ with both $b_1$ and $b_2$,
+and then, divide by the square of the magnitude of $b_1$ and $b_2$ respectively to find $x$ and $y$.
+
+Einstein notation simplifies
+\[
+\sum_{n}^{} A_in B_nj 
+\]
+to \[A_i B_j.\]
+
+Applying a transformation $R$ for a different basis set $B$:
+\[
+B^-1 RB.
+\]
+A basis set is considered orthonormal if all bases are orthogonal and have a magnitude of 1.
+A matrix is orthogonal if all of its columns are orthonormal bases.
+Additionally, an orthogonal matrix has the property that $A^{-1} = A^T$ since $A^TA = I$.
+The Gram-Schmidt process turns linearly independent vectors that span the plan
+into orthonormal bases by substracting each vector by its projection onto the previous vectors
+and then normalizing. 
+
+Eigenvectors are vectors that don't change direction after a transformation,
+and the eigenvector of a rotation is also its axis of rotation.
+Eigenvalues are the values that the eigenvectors are scaled by.
+This can be represented algebraically:
+\[
+Ax = \lambda x \implies (A - \lambda I)x = 0 \implies \det(A - \lambda I) = 0.
+\]   
+The characteristic polynomial is the determinant of the matrix $A - \lambda I$.
+
+A diagonalized matrix is much easier for repeated matrix multiplication.
+For example,
+\[
+T^n = 
+\begin{bmatrix} 
+    a^n & 0 & 0 \\
+    0 & b^n & 0 \\
+    0 & 0 & c^n
+\end{bmatrix}.
+\]
+A matrix made of eigenvectors is called a modal matrix,
+and a diagonalized matrix can be formed using the eigenvalues. 
+Applying the eigenvector transformation and then the eigenvalues matrix
+allows us to compute easily. For example, 
+\begin{gather}
+    T = CDC^{-1}, \nonumber \\ 
+    T^2 = CDC^{-1}CDC^-1 = CD^2C^{-1}, \nonumber \\
+    T^n  = CD^nC^{-1}. \nonumber
+\end{gather}
+
+\end{document}
