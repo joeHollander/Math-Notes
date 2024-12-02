@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  16 NOV 2024 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  29 NOV 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -236,8 +236,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box54
-)
-No file chicago-resume.aux.
+) (./chicago-resume.aux)
 \openout1 = `chicago-resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -258,6 +257,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -293,10 +293,11 @@ LaTeX Font Info:    ... okay on input line 47.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 47.
+(./chicago-resume.out) (./chicago-resume.out)
 \@outlinefile=\write3
 \openout3 = `chicago-resume.out'.
 
-(c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count286
 \scratchdimen=\dimen160
@@ -317,41 +318,27 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 [1
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.133 \end{document}
-                     [2] (./chicago-resume.aux)
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./chicago-resume.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-
-
-Package rerunfilecheck Warning: File `chicago-resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `chicago-resume.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D39E97EB546F341E8AE4AA5B268C1532;405.
+Package rerunfilecheck Info: File `chicago-resume.out' has not changed.
+(rerunfilecheck)             Checksum: 88139C71598A2DF4A12AF4C73D020EE0;473.
  ) 
 Here is how much of TeX's memory you used:
- 9971 strings out of 475501
- 152956 string characters out of 5776864
- 1944908 words of memory out of 5000000
- 32530 multiletter control sequences out of 15000+600000
+ 9985 strings out of 475501
+ 153169 string characters out of 5776864
+ 1945908 words of memory out of 5000000
+ 32537 multiletter control sequences out of 15000+600000
  581761 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,5n,79p,397b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,397b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on chicago-resume.pdf (2 pages, 118526 bytes).
+Output written on chicago-resume.pdf (1 page, 116791 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
