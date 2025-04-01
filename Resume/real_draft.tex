@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{article}
+\documentclass[10pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{multicol}
 
 % Define colors
 \definecolor{headingcolor}{RGB}{0, 51, 102}
@@ -18,7 +19,7 @@
 \titleformat{\section}
   {\large\bfseries\color{headingcolor}\uppercase}
   {}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{*1.5}{*0.5}
+\titlespacing*{\section}{0pt}{*1.2}{*0.4}
 
 % Remove page numbers
 \pagenumbering{gobble}
@@ -41,19 +42,17 @@
   \vspace{0.5em}
 }
 \newcommand{\role}[4]{
-  \begin{center}
   \textbf{\color{subheadingcolor}#1} \hfill \textbf{#2} \\
   \textit{#3} \hfill \textit{#4}
-  \end{center}
 }
 
 \begin{document}
 
 \name{Joe Hollander}
-\vspace{-0.5em}
+\vspace{-0.25em}
 \contact{Joe.H.Hollander@gmail.com}{(802) 233-0910}{185 Rye Circle, South Burlington, VT 05403}
 
-\vspace{-0.5em}
+\vspace{-0.25em}
 \begin{center}
 \textit{Passionate and motivated high school student with a strong interest in finance, mathematics, and their intersection.}
 \end{center}
@@ -61,23 +60,27 @@
 \section{EDUCATION}
 
 \vspace{0.5em}
-\role{South Burlington High School}{South Burlington, VT}{High Honors (Current GPA: 3.99/4.0), PSAT (1520/1520)}{August 2022--Present}   
+\role{South Burlington High School}{South Burlington, VT}{Current GPA: 3.99/4.0, PSAT: 1520/1520}{August 2022--Present}   
 \begin{flushleft}
-\textbf{Relevant Coursework:} AP Calculus BC (Exam Score: 5/5)
+\textbf{Relevant Coursework:} AP Calculus BC (Exam Score: 5/5)\\
 \end{flushleft}
 
-\role{University of Vermont}{Burlington, VT}{GPA: 4.0/4.0}{July 2024}
+\vspace{0.5em}
 \begin{flushleft}
-\textbf{Relevant Coursework:} Calculus III (Multivariable Calculus)
+\textbf{\color{subheadingcolor}University of Vermont} \hfill \textbf{Burlington, VT} \\
+\textit{GPA: 4.0/4.0} \hfill \textit{July 2024}
+\end{flushleft}
+\begin{flushleft}
+\textbf{Relevant Coursework:} Calculus III (Multivariable Calculus)\\
 \end{flushleft}
 
-\vspace{3mm}
+\vspace{0.5em}
 \section{PROJECTS}
-\vspace{1em}
+\vspace{0.5em}
 
 \begin{flushleft}
 \textbf{\color{subheadingcolor}KAGGLE COMPETITIONS}
-\begin{itemize}[leftmargin=*,nosep]
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
     \item Applied data cleaning techniques, including imputation, Principal Component Analysis, and normalization
     \item Implemented and optimized machine learning models including Random Forest, Clustering, and Ensemble methods for competitive prediction challenges
     \item Created insightful data visualizations using matplotlib and seaborn
@@ -86,7 +89,7 @@
 
 \begin{flushleft}
 \textbf{\color{subheadingcolor}OPTIONS PRICING MODELS}
-\begin{itemize}[leftmargin=*,nosep]
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
     \item Implemented the Black-Scholes model to calculate theoretical values of European options with precision
     \item Developed interactive visualizations demonstrating how changes in underlying prices affect option valuations
     \item Created graphical representations of simple option strategies to analyze risk-reward relationships
@@ -96,51 +99,61 @@
 
 \begin{flushleft}
 \textbf{\color{subheadingcolor}CRYPTOCURRENCY DATA COLLECTION}
-\begin{itemize}[leftmargin=*,nosep]
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
     \item Engineered a data collection system using Websocket and REST APIs to gather comprehensive tick-by-tick market data from the Kraken exchange
     \item Developed asynchronous Python functions to process and display real-time orderbook data and market statistics
     \item Optimized data storage solutions using Parquet file format, Git version control, and Docker containers
 \end{itemize}
 \end{flushleft}
 
-\vspace{1em}
-\section{EXTRACURRICULAR ACTIVITIES}
+\vspace{0.5em}
+\section{SKILLS}
+\vspace{0.5em}
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+  \item \textbf{Programming:} Python 3 (NumPy, Pandas, Matplotlib)
+  \item \textbf{Data Science:} Machine Learning (Scikit-learn, PyTorch)
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+  \item \textbf{Software:} Git, Docker, Parquet  
+\end{itemize}
+\end{minipage}
 
 \vspace{0.5em}
-\begin{itemize}[leftmargin=*,nosep]
-  \item Math League Regional Champions (2022-2025), Voted Captain (March 2025)
+\section{AWARDS \& ACHIEVEMENTS}
+\vspace{0.5em}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+  \item \textbf{Math League 7th Place Individual Award} (2025)
+  \item \textbf{National Merit Semifinalist:} Perfect PSAT score
+  \item \textbf{2nd Regional Prize in the Vermont High School Prize Examination} (May 2024)
+  \item \textbf{High Honor Roll:} All A's or A+'s excluding one A-
+\end{itemize}
+
+\vspace{0.5em}
+\section{EXTRACURRICULAR ACTIVITIES}
+\vspace{0.5em}
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+  \item Math League Regional Champions (2022-2025), Captain (2025)
   \item Varsity Ultimate Frisbee (Spring 2024, 2025)
   \item Varsity Soccer (Fall 2024)
-  \item Club Soccer (2017-2025), Voted Captain (2025)
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+  \item Club Soccer (2017-2025), Captain (2025)
   \item Ping Pong Club President (2024-2025)
-  \item Math Tutoring ($\approx30$ hours)
+  \item Math Tutoring ($\approx$30 hours)
 \end{itemize}
-
-\vspace{1em}
-\section{AWARDS}
+\end{minipage}
 
 \vspace{0.5em}
-\begin{itemize}[leftmargin=*,nosep]
-  \item \textbf{Math League 7th Place Individual Award} (2025): 
-  \item \textbf{National Merit Semifinalist}: Perfect PSAT score
-  \item \textbf{2nd regional prize in the Vermont High School Prize Examination} (May 2024)
-  \item \textbf{High Honor Roll}: All A's or A+'s excluding one A- 
-\end{itemize}
-
-\vspace{1em}
-\section{SKILLS}
-
-\vspace{0.5em}
-\begin{itemize}[leftmargin=*,nosep]
-  \item \textbf{Programming:} Python 3 (NumPy, Pandas, Matplotlib)
-  \item \textbf{Data Science:} Machine Learning (Scikit-learn, PyTorch), Statistical Analysis
-  \item \textbf{Software Development:} Git Version Control, Docker Containerization
-\end{itemize}
-
-\begin{flushleft}
-  \vspace{0.5em}
-  Resume written in \LaTeX.
-\end{flushleft}
-
+\begin{flushright}
+  \footnotesize Resume written in \LaTeX.
+\end{flushright}
 
 \end{document}
