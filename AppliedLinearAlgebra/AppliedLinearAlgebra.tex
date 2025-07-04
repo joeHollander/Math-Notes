@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{array, esint}
+
+\newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+
+\title{Applied Linear Algebra Notes}
+\author{Joe Hollander}
+\date{Summer 2025}  
+
+\begin{document}
+\maketitle 
+
+\begin{enumerate}
+    \item 1.1
+    Elementary Row Operations
+    \begin{enumerate}
+        \item Interchange two rows
+        \item Multiply the elements of a row by a nonzero constant
+        \item Add a multiple of the elements of one row to the corresponding elements of another
+    \end{enumerate}
+    Gauss-Jordan elimination is a systematic way to eliminate variables to arrive at a solution matrix. 
+    The equation is solved when the matrix is diagonalized. Create zeros in each column until finished. 
+    Finally, normalize the final element ((3,3) for a 3x3 matrix, etc.). 
+    Interchange rows if a diagonal element is zero. Final matrix is called the reduced echelon form.
+\end{enumerate}
+
+\end{document}
