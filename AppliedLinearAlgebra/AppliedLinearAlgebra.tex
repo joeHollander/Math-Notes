@@ -1,10 +1,8 @@
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{physics}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{mathtools}
-\usepackage{array, esint}
 
 \newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
 
@@ -19,14 +17,79 @@
     \item 1.1
     Elementary Row Operations
     \begin{enumerate}
-        \item Interchange two rows
-        \item Multiply the elements of a row by a nonzero constant
-        \item Add a multiple of the elements of one row to the corresponding elements of another
+        \item Interchange two rows.
+        \item Multiply the elements of a row by a nonzero constant.
+        \item Add a multiple of the elements of one row to the corresponding elements of another.
     \end{enumerate}
     Gauss-Jordan elimination is a systematic way to eliminate variables to arrive at a solution matrix. 
     The equation is solved when the matrix is diagonalized. Create zeros in each column until finished. 
     Finally, normalize the final element ((3,3) for a 3x3 matrix, etc.). 
     Interchange rows if a diagonal element is zero. Final matrix is called the reduced echelon form.
+    The formula can be used for multiple constants with the same coefficient matrix. 
+    To do this, just stack the constants in each column: 
+    \begin{gather}
+    x - y + 3z = b_1 \\
+    2x - y + 4z = b_2 \\
+    -x + 2y -4z = b_3
+    \end{gather}
+    
+    for 
+    \[
+    \begin{bmatrix}
+        b_1 \\
+        b_2 \\
+        b_3 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        8 \\
+        11 \\
+        -11 \\
+    \end{bmatrix},
+    \begin{bmatrix}
+        0 \\
+        1 \\
+        2 \\
+    \end{bmatrix},
+    \begin{bmatrix}
+        3 \\
+        3 \\
+        4 \\
+    \end{bmatrix}
+    \]
+    would produce the augmented matrix
+    \[
+    \begin{bmatrix}
+        1 & -1 & 3 & 8 & 0 & 3 \\
+        2 & -1 & 4 & 11 & 1 & 3 \\
+        -1 & 2 & -4 & -11 & 2 & 4 \\
+    \end{bmatrix}
+    \]
+    which simplifies to 
+    \[
+    \begin{bmatrix}
+        1 & 0 & 0 & 1 & 0 & -2 \\
+        0 & 1 & 0 & -1 & 3 & 1 \\
+        0 & 0 & 1 & 2 & 1 & 2 \\
+    \end{bmatrix}.
+    \]
+    \item 1.2 
+    A matrix is in reduced echelon form if:
+    \begin{enumerate}
+        \item Any rows consisting entirely of zeros are grouped at the bottom of the matrix.
+        \item The first nonzero element of each other row is 1. This element is called a leading 1. 
+        \item The leading 1 of each row after the first is positioned to the right of the leading 1 of the previous row.
+        \item All other elements in a column that contain a leading 1 are zero. 
+    \end{enumerate}
+    The reduced echelon of a matrix is unique. 
+    To express multiple solutions, write the leading varaibles in each equation 
+    (variables with the lowest subscript: $x_1$, etc.)  in terms of the remaining free variables.
+    If last row has all zeros apart from constant, there are no solutions for the system.
+    A system of linear equations is said to be homogeneous if all the constants are zero.  
+    A homogeneous system of linear equations always has a solution of all zeros. 
+    A homogenous system of linear equations that has more variables than equations (more rows than columns) 
+    has many solutions. 
+
 \end{enumerate}
 
 \end{document}
