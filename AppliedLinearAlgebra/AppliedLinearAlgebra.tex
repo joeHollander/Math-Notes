@@ -5,6 +5,7 @@
 \usepackage{mathtools}
 
 \newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
 \title{Applied Linear Algebra Notes}
 \author{Joe Hollander}
@@ -13,8 +14,8 @@
 \begin{document}
 \maketitle 
 
-\begin{enumerate}
-    \item 1.1
+\section{}
+    \subsection*{1.1}
     Elementary Row Operations
     \begin{enumerate}
         \item Interchange two rows.
@@ -27,11 +28,11 @@
     Interchange rows if a diagonal element is zero. Final matrix is called the reduced echelon form.
     The formula can be used for multiple constants with the same coefficient matrix. 
     To do this, just stack the constants in each column: 
-    \begin{gather}
+    \begin{gather*}
     x - y + 3z = b_1 \\
     2x - y + 4z = b_2 \\
     -x + 2y -4z = b_3
-    \end{gather}
+    \end{gather*}
     
     for 
     \[
@@ -73,7 +74,8 @@
         0 & 0 & 1 & 2 & 1 & 2 \\
     \end{bmatrix}.
     \]
-    \item 1.2 
+
+    \subsection*{1.2}
     A matrix is in reduced echelon form if:
     \begin{enumerate}
         \item Any rows consisting entirely of zeros are grouped at the bottom of the matrix.
@@ -90,6 +92,55 @@
     A homogenous system of linear equations that has more variables than equations (more rows than columns) 
     has many solutions. 
 
-\end{enumerate}
+    \subsection*{1.7}
+    Curve fitting a polynomial involves estimating variables, which can be done by solving a system of linear equations.
+    Kirchhoff's Laws state:
+    \begin{enumerate}
+        \item All the current flowing into a junction must flow out of it
+        \item The sum of the IR terms (I denotes current, R resistance) in any direction around a closed path
+        is equal to the total voltage in the path in that direction. 
+    \end{enumerate}
+    Using these laws a system of linear equations can be formed to determine the current flowing through certain points.
+    The same procedure can be used with traffic. 
 
+    \subsection*{1.3}
+    $\mathbb{R}^n$ is closed under addition and scalar multiplication if the result is also in $\mathbb{R}^n$. 
+    To determine if $\mathbf{r}$ is a linear combination of $\mathbf{u, v,}$ and $\mathbf{w}$, 
+    determine if this system has a solution: 
+    \begin{gather*}
+        c_1\mathbf{u_1} + c_2\mathbf{v_1} + c_3\mathbf{w_1} = \mathbf{r_1} \\
+        c_1\mathbf{u_2} + c_2\mathbf{v_2} + c_3\mathbf{w_2} = \mathbf{r_2} \\
+        c_1\mathbf{u_3} + c_2\mathbf{v_3} + c_3\mathbf{w_3} = \mathbf{r_3}.
+    \end{gather*}
+    The norm of a vector $\mathbf{r}$ is $\norm{\mathbf{r}}$, and it denotes the magnitude of a vector. 
+    In $\mathbb{R}^n$, $\norm{\mathbf{r}} = \sqrt{\mathbf{r}^n}$.
+
+    \subsection*{1.4}
+    Subspaces are subsets of $\mathbb{R}^n$ that have all the same properties (subset must be closed under addition and multiplication).
+    An example for demonstrating a subset in $\mathbb{R}^3$ with the form $(a, 2a, 3a)$ is closed for addition: 
+    \begin{align*}
+       (a, 2a, 3a) + (b, 2b, 3b) &= (a + b, 2a + 2b, 3a + 3b) \\
+       &= (a + b, 2(a +b), 3(a + b)), 
+    \end{align*}
+    and multiplication: 
+    \begin{align*}
+        k(a, 2a, 3a) &= (ka, 2ka, 3ka) \\
+        &= (ka, 2(ka), 3(ka)).
+    \end{align*}
+
+
+    When every vector of a vector space can be written as a linear combination of a set of vectors, the vectors span the space.
+    For example, the subspace in $\mathbb{R}^n$ defined by $(a, b, a+b)$ is spanned by the vectors $(1, 0, 1)$ and $(0, 1, 1)$
+    because $(a, b, a+b) = a(1, 0, 1) + b(0, 1, 1)$. Generally, vectors that make up a line in $\mathbb{R}^n$ are subspaces.
+    The set of solutions to any homogenous system of linear equations is a subspace.
+
+    \subsection*{1.5}
+    The basis is the finite set of vectors that span a whole space. 
+    The basis must also be linearly independent. 
+    The vectors $\mathbf{v_1, v_2, \dots, v_n}$ are linearly independent 
+    if the identity $c_1 \mathbf{v_1} + c_2 \mathbf{v_2} + \dots + c_n \mathbf{v_n} = \mathbf{0}$ 
+    is only true for $c_1 = 0, c_2 = 0, \dots, c_n = 0$. 
+    If the vectors are not linearly independent, they are linearly dependent. 
+
+ 
 \end{document}
