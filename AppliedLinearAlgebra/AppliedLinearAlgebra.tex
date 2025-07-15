@@ -199,12 +199,41 @@
     If $A$ is an $m \times r$ matrix and $B$ is an $r \times n$ matrix, 
     then $AB$ is an $m \times n$ matrix.
     Three classes of matrices are notable: 
-    The zero matrix which contains all zeros, 
+    The zero matrix $O$ which contains all zeros, 
     the diagonal matrix which contains zeros everywhere except the main diagonal,
-    and the identity matrix which is a diagonal matrix with ones on the main diagonal.
+    and the identity matrix $I$ which is a diagonal matrix with ones on the main diagonal.
     If $B_1$ is column one of matrix $B$,
     then $AB = [AB_1, AB_2, \dots, AB_n]$.
     Matrices can be partitioned into blocks, and these blocks can be multiplied.
+
+    \subsection*{2.2}
+    For matrix multiplication,
+    \begin{enumerate}
+        \item $A(BC) = (AB)C$
+        \item $A(B + C) = AB + AC$
+        \item $(A + B)C = AC + BC$
+    \end{enumerate}
+    The product of a chain of matrices will have the same number of rows as the first matrix 
+    and the same number of columns as the last matrix. 
+    For matrices, $AB = AC$ doesn't imply $B = C$, and
+    $PQ = O$ doesn't imply $P = O$ or $Q = O$, 
+    If $A$ is an $n \times n$ square matrix, and $r$ and $s$ are nonnegative integers, then
+    \begin{enumerate}
+        \item $A^rA^s = A^{r+s}$
+        \item $(A^r)^s = A^{rs}$
+        \item $A^0 = I_n$
+    \end{enumerate}
+
+    Consider a homogenous system of linear equations $AX = 0$. 
+    Let $X_1$ and $X_2$ be solutions of the system.
+    Then $AX_1 = 0$ and $AX_2 = 0$, so $AX_1 + AX_2 = A(X_1 + X_2) = 0$, and $X_1 + X_2$ is also a solution.
+    Furthermore, if $c$ is any scalar, then $AX_1 = 0$ and $c(AX_1) = A(cX_1) = 0$, so $cX_1$ is also a solution.
+
+    The corresponding homogeneous system of a matrix is one in which the right-hand side of the equations is zero,
+    and the solution of the corresponding nonhomogeneous system is the solution of the homogeneous system plus a particular solution of the nonhomogeneous system.
     
+
+
+
 
 \end{document}
