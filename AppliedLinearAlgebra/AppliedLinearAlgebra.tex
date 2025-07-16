@@ -231,9 +231,36 @@
 
     The corresponding homogeneous system of a matrix is one in which the right-hand side of the equations is zero,
     and the solution of the corresponding nonhomogeneous system is the solution of the homogeneous system plus a particular solution of the nonhomogeneous system.
-    
 
-
+    \subsection*{2.3}
+    The transpose of a matrix $A$, denoted $A^T$, is the matrix whose columns are the rows of the given matrix $A$.
+    Let $A$ and $B$ be matrices and $c$ be a scalar. There are several properties of the transpose:
+    \begin{enumerate}
+        \item $(A + B)^T = A^T + B^T$
+        \item $(cA)^T = cA^T$
+        \item $(AB)^T = B^TA^T$
+        \item $(A^T)^T = A$
+    \end{enumerate}
+    A symmetrical matrix is a matrix that is equal to its transpose.
+    The trace of $A$, denotedenoted $tr(A)$, is the sum of the elements on the main diagonal.
+    There are several properties of the trace:
+    \begin{enumerate}
+        \item $tr(A + B) = tr(A) + tr(B)$
+        \item $tr(AB) = tr(BA)$
+        \item $tr(cA) = ctr(A)$
+        \item $tr(A^T) = tr(A)$
+    \end{enumerate}
+    Matrices can also contain complex numbers, 
+    and the conjugate of a matrix $A$ is denoted $\bar{A}$.
+    Furthermore, the conjugate transpose of a matrix $A$ is denoted $A^*$,
+    and a square matrix $C$ is called Hermitian if $C = C^*$.
+    There are several properties of the conjugate transpose:
+    \begin{enumerate}
+        \item $(A + B)^* = A^* + B^*$
+        \item $(zA)^* = \bar{z}A^*$
+        \item $(AB)^* = B^*A^*$
+        \item $(A^*)^* = A$
+    \end{enumerate}
 
 
 \end{document}
