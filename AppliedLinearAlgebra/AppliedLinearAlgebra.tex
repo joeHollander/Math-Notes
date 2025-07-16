@@ -6,6 +6,7 @@
 
 \newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\colvec}{\begin{bmatrix} x \\ y \end{bmatrix}}
 
 \title{Applied Linear Algebra Notes}
 \author{Joe Hollander}
@@ -344,7 +345,25 @@
     These matrices are used in the LU factorization of a matrix.
 
 
+    \subsection*{2.5}
+    A transformation $T$ of $\mathbb{R}^n$ into $\mathbb{R}^m$ is a rule that assigns to each vector $\mathbf{u}$ in $\mathbb{R}^n$
+    a unique vector $\mathbf{u}$ in $\mathbb{R}^m$, and is denoted by $T(\mathbf{u}) = \mathbf{v}$.
+    $\mathbb{R}^n$ is the domain of $T$, and $\mathbb{R}^m$ is the codomain of $T$.
+    There are three main types of transformations:
+    \begin{enumerate}
+        \item Dilation: $T(\colvec) = \begin{bmatrix} r & 0 \\ 0 & r \end{bmatrix}\colvec$
+        \item Reflection: $T(\colvec) = \begin{bmatrix} \pm1 & 0 \\ 0 & \pm1 \end{bmatrix}\colvec$
+        \item Rotation: $T(\colvec) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\colvec$
+    \end{enumerate}
+    Transformations can also be combined. 
 
-    
+    An orthogonal matrix $A$ is an invertible matrix that has the property $A^-1 = A^T$.
+    An orthogonal transformation is one where $T(\mathbf{u}) = A\mathbf{u}$ for some orthogonal matrix $A$.
+    Orthogonal transformations preserve norms, differences in angles, and distances (rigid motions).
 
-\end{document}
+    A translation is a transformation $T: \mathbb{R}^n \rightarrow \mathbb{R}^n$ of the form 
+    $T(\mathbf{u}) = \mathbf{u} + \mathbf{v}$, where $\mathbf{v}$ is a fixed vector.
+    An affine transformation is a transformation $T: \mathbb{R}^n \rightarrow \mathbb{R}^m$ of the form
+    $T(\mathbf{u}) = A \mathbf{u} + \mathbf{v}$. 
+
+\end{document} 
