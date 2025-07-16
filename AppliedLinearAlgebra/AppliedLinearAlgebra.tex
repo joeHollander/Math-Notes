@@ -262,5 +262,89 @@
         \item $(A^*)^* = A$
     \end{enumerate}
 
+    In archeological seriation, a matrix is used to represent the relative ages of artifacts,
+    with the defintion 
+    \[
+    a_{ij} = \begin{cases}
+        1 & \text{if grave} \ i \ \text{contains pottery type} \ j \\
+        0 & \text{if grave} \ i \ \text{does not contain pottery type} \ j
+    \end{cases}
+    \] 
+    The element $g_{ij}$ of the matrix $G = AA^T$ 
+    is equal to the number of types of pottery commmon to both grave $i$ and grave $j$.
+    Then, create a map of the ages of the graves by starting with a great element from this matrix,
+    and create connections depending on the elements. 
+    For example, consider the matrix 
+    \[
+    G = \begin{bmatrix}
+        1 & 1 & 0 & 0 & 0 \\
+        1 & 2 & 0 & 0 & 1 \\
+        0 & 0 & 2 & 1 & 1 \\
+        0 & 0 & 1 & 1 & 0 \\
+        0 & 1 & 1 & 0 & 2
+    \end{bmatrix}
+    \]
+    Since $g_{12} = 1$, graves 1 and 2 share one type of pottery, so they are connected, and our current map is $1-2$. 
+    Similarly, $g_{25} = 1$, so graves 2 and 5 are connected, and our map is now $1-2-5$.
+    Again, $g_{53} = 1$, so graves 5 and 3 are connected, and our map is now $1-2-5-3$.
+    Finally, $g_{34} = 1$, so graves 3 and 4 are connected, and our final map is now $1-2-5-3-4$.
+    This means that grave 1 is the oldest or that grave 4 is the oldest. 
+    In a similar method, the matrix $P=A^TA$ can be constructed, 
+    and its elements detail how many graves contain both the $i$th and $j$th types of pottery. 
+    The chronological order of the pottery can then also be determined using a map. 
+
+    \subsection*{2.4}
+    Let $A$ be an $n \times n$ matrix. If a matrix $B$ can be found such that $AB = BA = I_n$, 
+    then $A$ is said to be invertible, and $B$ is called the inverse of $A$.
+    If $A$ is invertible, then the unique inverse of $A$ is denoted $A^{-1}$.
+    $A^{-k}$ is defined as $(A^{-1})^k$. 
+    The inverse of matrix can be found by solving the system of linear equations $AX = I_n$
+    For example, to determine the inverse of the matrix
+    \[
+    A = 
+    \begin{bmatrix}
+        1 & -1 & -2 \\
+        2 & -3 & -5 \\
+        -1 & 3 & 5
+    \end{bmatrix},
+    \]
+    determine the reduced echelon form of the augmented matrix
+    \[
+    [A:I_n] =
+    \begin{bmatrix}
+         1 & -1 & -2 & 1 & 0 & 0 \\
+        2 & -3 & -5 & 0 & 1 & 1\\
+        -1 & 3 & 5 & 0 & 0 & 1
+    \end{bmatrix}.
+    \]
+    There are several properties of the matrix inverse:
+    \begin{enumerate}
+        \item $(A^{-1})^{-1} = A$
+        \item $(cA)^-1 = \frac{1}{c}A^{-1}$
+        \item $(AB)^{-1} = B^{-1}A^{-1}$
+        \item $(A^n)^{-1} = (A^{-1})^n$
+        \item $(A^T)^{-1} = (A^{-1})^T$
+    \end{enumerate}
+
+    Let $AX=Y$ be a system of $n$ linear equations in $n$ variables. 
+    If $A$ is invertible, then $X = A^{-1}Y$. 
+    This method is often not used, for it is inefficient. 
+
+    An elementary matrix is one that can be obtained from the identity matrix by a single elementary row operation.
+    There are three types of elementary matrices:
+    \begin{enumerate}
+        \item Interchange rows
+        \item Multiply a row by a nonzero constant
+        \item Add a multiple of one row to another row
+    \end{enumerate}
+    These matrices can be used to apply elementary row operations to matrices through matrix multiplication. 
+    Each elementary matrix is square and invertible,
+    and if $A$ and $B$ are row equivalent matrices (one can be obtained from the other by elementary row operations) 
+    and $A$ is invertible, then $B$ is also invertible.
+    These matrices are used in the LU factorization of a matrix.
+
+
+
+    
 
 \end{document}
