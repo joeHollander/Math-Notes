@@ -374,6 +374,7 @@
     Any linear transformation can be represented by its standard matrix
     a matrix whose columns are the images of the standard basis vectors: 
     \[A = [T(\mathbf{e}_1) \ \dots \ T(\mathbf{e}_n)]\]
+    To determine the transformation matrix then, apply the transformation to the standard basis vectors.
     
     Typically, translations cannot be used in combination with linear transformations as a product.
     However if an extra dimension is added, the translation can be represented as a linear transformation.
@@ -397,6 +398,12 @@
     where $a$ and $b$ are the translation amounts.
 
     Fractals can be generated using multiple affine transformations given various probabilities. 
-    These parameters can be written as rows of a iterated function system matrix. 
+    These parameters can be written as rows of a iterated function system matrix.
+    
+    \subsection*{2.8}
+    A stochastic matrix is a square matrix whose elements are probabilities and whose columns sum to 1.
+    If $A$ and $B$ are stochastic matrices, then $AB$ is also a stochastic matrix.
+    
+
 
 \end{document} 
