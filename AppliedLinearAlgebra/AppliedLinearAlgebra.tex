@@ -445,6 +445,37 @@
      = aei + bfg + cdh - ceg - bdi - afh
     \]
 
+    \subsection*{3.2}
+    Let $A$ be a square matrix and $c$ be a nonzero scalar.
+    \begin{enumerate}
+        \item If a matrix $B$ is obtained from $A$ by multiplying a row or column by $c$, then $|B| = c|A|$.
+        \item If a a matrix $B$ is obtained from $A$ by interchanging two rows or columns, then $|B| = -|A|$.
+        \item If a matrix $B$ is obtained from $A$ by adding a multiple of one row or column to another, then $|B| = |A|$.
+    \end{enumerate}
+
+    A square matrix $A$ is singular if $|A| = 0$, and $A$ is nonsingular if $|A| \neq 0$.
+    Let $A$ be a square matrix. A is singular if 
+    \begin{enumerate}
+        \item all the elements of a row or column are zero
+        \item two rows or columns are equal
+        \item twos rows or columns are proportional
+    \end{enumerate}
+    Let $B$ be a matrix with the same size as $A$.
+    $AB$ being singular implies that either one of or both of $A$ and $B$ are singular, 
+    but the converse is not true.
+
+    Let $A$ and $B$ be $n \times n$ matrices and $c$ be a nonzero scalar.
+    \begin{enumerate}
+        \item $|cA| = c^n|A|$
+        \item $|AB| = |A||B|$
+        \item $|A^T| = |A|$
+        \item $|A^{-1}| = \frac{1}{|A|}$
+    \end{enumerate}
+
+    The determinant of a triangular matrix is equal to the product of the diagonal elements.
+    When simplifying to find the determinant, if at any stage one of the diagonal elements is zero, 
+    and all elements below it are zero, then the determinant is zero.
+    
 
 
 \end{document} 
