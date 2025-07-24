@@ -404,6 +404,47 @@
     A stochastic matrix is a square matrix whose elements are probabilities and whose columns sum to 1.
     If $A$ and $B$ are stochastic matrices, then $AB$ is also a stochastic matrix.
     
+    \section*{3}
+
+    \subsection*{3.1}
+    The determinant of a $2 \times 2$ matrix $A$ is denoted by $|A|$ or det($A$) and is given by 
+    \[
+    \begin{vmatrix}
+        a_{11} & a_{12} \\
+        a_{21} & a_{22}
+    \end{vmatrix}
+    = 
+    a_{11}a_{22}-a_{12}a_{21}
+    \]
+    This determinant is given by the difference of the products of the two diagonals of the matrix. 
+
+    Let $A$ be a square matrix. The minor of the element $a_{ij}$ is the determinant of the matrix 
+    obtained by removing the $i$th row and $j$th column from $A$.
+    The cofactor of the element $a_{ij}$ is denoted $C_{ij}$ and is given by
+    \[
+    C_{ij} = (-1)^{i+j}M_{ij}
+    \]
+    Now, a new definition. 
+    The determinant of a square matrix is the sum of the products of the elements of the first row
+    and their cofactors. For example, if $A$ is a $3 \times 3$ matrix,
+    then $|A| = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}.$
+    More generally, the determinant of a square matrix is the sum of the products
+    of the elements of any row or column and theri cofactors. 
+    \[
+    i\text{th row expansion:} \quad |A| = a_{i1}C_{i1} + a_{i2}C_{i2} + \dots + a_{in}C_{in} \\
+    \]
+    The computation in evaluating a determinant can be minimized 
+    by expanding in terms of the row or column that contains the most 0's. 
+    The determinant of a $3 \times 3$ matrix can also be found using diagonals. 
+    \[
+    \begin{vmatrix}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+    \end{vmatrix}
+     = aei + bfg + cdh - ceg - bdi - afh
+    \]
+
 
 
 \end{document} 
