@@ -475,7 +475,27 @@
     The determinant of a triangular matrix is equal to the product of the diagonal elements.
     When simplifying to find the determinant, if at any stage one of the diagonal elements is zero, 
     and all elements below it are zero, then the determinant is zero.
-    
 
+    \subsection*{3.3}
+    The matrix whose elements are cofactors of $A$ is called the matrix of cofactors of $A$.
+    The transpose of this matrix is called the adjoint of $A$ and is denoted adj($A$).
+    Let $A$ be a nonsingular square matrix. 
+    \[
+    A^{-1} = \frac{1}{|A|}adj(A)
+    \]
+    Furthermore, $A^{-1}$ exists if and only if $|A| \neq 0$.
+    
+    Let $AX = B$ be a system of $n$ linear equations in $n$ variables. 
+    If $A$ is nonsingular, then $X = A^{-1}B$, but if $A$ is singular, then there are many or no solutions.
+    Cramer's rule states that if $A$ is nonsingular, then the system has a unique solution given by
+    \[
+    x_1 = \frac{|A_1|}{|A|}, \quad \dots, \quad x_n = \frac{|A_n|}{|A|}
+    \]
+    where $A_i$ is the matrix obtained by replacing column $i$ of $A$ with B.
+    Since a nonsingular matrix can only have one solution,
+    a homogeneous system of linear equations can only have a solution apart from the trivial solution
+    if the determinant of the matrix of coefficients is zero. 
+
+    
 
 \end{document} 
