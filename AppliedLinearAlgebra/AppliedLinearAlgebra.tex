@@ -496,6 +496,24 @@
     a homogeneous system of linear equations can only have a solution apart from the trivial solution
     if the determinant of the matrix of coefficients is zero. 
 
+    \subsection*{3.4}
+    Let $A$ be a $n \times n$ matrix. 
+    A scalar $\lambda$ is called an eigenvalue of $A$ 
+    if there exists a nonzero vector $\mathbf{x}$ in $\mathbb{R}^n$ such that
+    \[
+    A\mathbf{x} = \lambda \mathbf{x}.
+    \]
+    The vector $\mathbf{x}$ is called an eigenvector of $A$ corresponding to $\lambda$.
+    Solving $|A - \lambda I_n| = 0$ for $\lambda$ leads to all the eigenvalues of $A$.
+    The expansion of $A - \lambda I_n$ gives the characteristic polynomial,
+    a polynomial of degree $n$ in $\lambda$ that has $\lambda$ as a root.
+    Inputting the found $\lambda$ back in to $(A - \lambda I_n)\mathbf{x}$ 
+    gives the corresponding eigenvectors (there are an infinite amount for each eigenvalue).
+    The set of all eigenvectors corresponding to a given eigenvalue 
+    forms a subspace of $\mathbb{R}^n$ called the eigenspace of $A$. 
+    The number of times an eigenvalue appears as a root of the characteristic polynomial 
+    is called the  multiplicity of the eigenvalue.
     
+
 
 \end{document} 
