@@ -514,6 +514,8 @@
     The number of times an eigenvalue appears as a root of the characteristic polynomial 
     is called the  multiplicity of the eigenvalue.
 
+    In a triangular matrix, the eigenavalues are the diagonal elements of the matrix.
+
     \subsection*{3.5}
     The transition matrix $P$ of a Markov chain is said to be regular if for some power of $P$ all the
     components are positive. 
@@ -526,5 +528,59 @@
     Leslie matrices are a discrete, age-structured model of population growth.
     They also have eigenvectors that represent the long-term population distribution
     and eigenvalues that represent the long-term growth rate.
+
+    \subsection*{5.3}
+    $B$ is similar to $A$ if there exists an invertible matrix $C$
+    such that $B = C^{-1}AC$.
+    Similar matrices have the same eigenvalues. 
+    Let $A$ be an $n \times n$ matrix. 
+    \begin{enumerate}
+        \item If $A$ has $n$ linearly independent eigenvectors, it is diagonalizable.
+        The matrix $C$ whose columns consist of $n$ linearly independent eigenvectors 
+        can be used in a similarity transformation to give a diagonal matrix $D$. 
+        This diagonal elements of $D$ will be the eigenvalues of $A$.
+        \item If $A$ is diagonizable, then it has $n$ linearly independent eigenvectors.
+    \end{enumerate}
+
+
+    Let
+    \[
+    A = 
+    \begin{bmatrix}
+        -4 & -6 \\
+        3 & 5 \\
+    \end{bmatrix}.
+    \]
+    This matrix has eigenvalues 2 and -1, 
+    corresponding to eigenvectors $\begin{bmatrix} -1 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} -2 \\ 1 \end{bmatrix}$. 
+    The diagonal elements of the diagonalized matrix are the eigenvalues
+    \[
+    D = 
+    \begin{bmatrix}
+        2 & 0 \\
+        0 & -1 \\
+    \end{bmatrix},
+    \]
+    and the column vectors of the diagonalizing matrix are linearly independent eigenvectors
+    \[
+    C = 
+    \begin{bmatrix}
+        -1 & -2 \\
+        1 & 1 \\
+    \end{bmatrix}.
+    \]
+    The order of the eigenvalues in the diagonalized matrix $D$
+    is the same as the order of the eigenvectors in the diagonalizing matrix $C$.
+
+    This makes computation easy because $A^k = CD^kC^{-1}$. 
+
+    Let $A$ be an $n \times n$ symmetric matrix. 
+    \begin{enumerate}
+        \item If $A$ is real, all of the eigenvalues are real, and it has $n$ linearly independent eigenvectors.
+        \item The dimension of the eigenspace corresponding to an eigenvalue is equal to the multiplicity of the eigenvalue.
+        \item The eigenspaces of $A$ are orthogonal. 
+    \end{enumerate}
+
+
 
 \end{document} 
