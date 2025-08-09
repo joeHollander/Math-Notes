@@ -581,6 +581,53 @@
         \item The eigenspaces of $A$ are orthogonal. 
     \end{enumerate}
 
+    \section*{4}
+    
+    \subsection*{4.1}
+    A vector space is a set $V$ of elements called vectors,
+    having operations of addition and scalar multiplication
+    defined on it tht satisfy the following conditions:
+    \begin{enumerate}
+        \item The sum $\mathbf{u} + \mathbf{v}$ exists and is an element of $V$.
+        \item $c \mathbf{u}$ exists and is an element of $V$.
+        \item $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
+        \item $\mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w}$
+        \item The zero vector $\mathbf{0}$ exists and is an element of $V$.
+        \item For every element $\mathbf{u}$ of $V$, $\mathbf{-u}$ exists such that $\mathbf{-u} + \mathbf{u} = \mathbf{0}$.
+        \item $c(\mathbf{u} + \mathbf{v}) = c\mathbf{u} + c\mathbf{v}$
+        \item $(c + d)\mathbf{u} = c\mathbf{u} + d\mathbf{u}$
+        \item $c(d \mathbf{u}) = (cd)\mathbf{u}$
+        \item $1\mathbf{u} = \mathbf{u}$
+    \end{enumerate}
+    The set of real $m \times n$ matrices is also a vector space.
+
+    Let $V$ be the set of all functions $f: \mathbb{R} \rightarrow \mathbb{R}$. 
+    Certain properties define a vector space over $V$:
+    \begin{enumerate}
+        \item Pointwise addition: $(f + g)(x) = f(x) + g(x)$
+        \item Pointwise scalar multiplication: $(cf)(x) = cf(x)$
+    \end{enumerate}
+    There is also the complex vector space denoted $\mathbb{C}^n$.
+
+    A subspace is a vector space if it is closed under addition and scalar multiplication, 
+    for all other operations are inherited from the parent vector space. 
+    For example, the set of $2 \times 2$ diagonal matrices is a subspace of the set of all $2 \times 2$ matrices,
+    and the set of all polynomials is a subspace of the set of all real functions.
+
+    Sets can be easily shown to not be subspaces by equating the zero vector to the set.
+
+    \subsection*{4.2}
+    Linear combinations and spans extend to vector spaces. 
+    Checking if a vector is a linear combination of a set of vectors 
+    is the same process for all vector spaces.
+    For all vector spaces,
+    \begin{enumerate}
+        \item If $\mathbf{v_1}$ and $\mathbf{v_2}$ span a subspace, so does $k_2 \mathbf{v_1}$ and $k_2 \mathbf{v_2}$.
+        \item If $\mathbf{v_1, v_2, v_3}$ span a subspace, so does $\mathbf{v_1, v_2, v_1 + v_2 + v_3}$.
+    \end{enumerate}
+
+    Any set of vectors from a vector space generate (span) a subspace.
+    A vector can be shown to be in this subspace if it is a linear combination of the vectors spannig the subspace.
 
 
 \end{document} 
