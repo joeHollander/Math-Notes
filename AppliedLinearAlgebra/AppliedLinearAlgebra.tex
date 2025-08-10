@@ -719,16 +719,40 @@
     Transposing the transformation matrix and finding the reduced row echelon form gives the basis for the range. 
     This may be expressed like this: $\text{range}(T) = \{(s, t, s + t)\}$.
 
-    For a matrix transformation,
-    the sum of the dimensions of the kernel and the range is equal to the dimension of the transformation matrix.
-    Furthermore, the sum of the rank and the dimension of the kernel is equal to the dimension of the transformation matrix.
+    For a matrix transformation with $n$ columns,
+    \[
+    \text{dim(ker}(T)) + \text{dim(range}(T)) = n,
+    \]
+    Furthermore,
+    \[
+    \text{dim(ker}(T)) + \text{rank}(T) = n,
+    \]
 
     The four subspaces rows($A$), null($A$), col($A$), and null($A^T$) 
     are the fundamental subspaces of the transformation matrix $A$.
     The orthogonal complement of the row space is the null space of $A$,
     and the orthogonal complement of the column space is the null space of $A^T$.
-    
 
+    \subsection*{4.9}
+    A transformation $T$ is said to be one-to-one if each element in the range 
+    is the image of just one element in the domain.
+    This implies that the transformation is invertible and that 
+    \[
+    T(\mathbf{u}) = T(\mathbf{v}) \implies \mathbf{u} = \mathbf{v}
+    \]
 
+    A linear transformation is one-to-one if and only if the kernel is the zero vector, and
+    a matrix transformation is one-to-one if and only if the matrix is nonsingular. 
+    For a square matrix, use the determinant to determine if the transformation is one-to-one,
+    and for a nonsingular matrix, use the rank/nullity theorem to determine if the transformation is one-to-one.
+    If the dimension of the kernel is not zero, the transformation is not one-to-one and vice versa.
+    One-to-one linear transformations preserve linear independence.
+
+    For a invertible linear transformation $T$,
+    \begin{enumerate}
+        \item ker($T$) = $\{0\}$
+        \item range($T$) = $\mathbb{R}^n$
+        \item $T^{-1}$ is linear.
+    \end{enumerate} 
 
 \end{document}
