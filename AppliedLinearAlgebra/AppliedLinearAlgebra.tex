@@ -688,6 +688,46 @@
         \item The column vectors of $A$ form a basis for $\mathbb{R}^n$.
     \end{enumerate}
 
+    \subsection*{4.8}
+    Let $U$ and $V$ be vector spaces. Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $U$ 
+    and let $c$ be a scalar. A transformation $T: U \rightarrow V$ is said to be linear if 
+    \begin{align*}
+        T(\mathbf{u} + \mathbf{v}) &= T(\mathbf{u}) + T(\mathbf{v}) \\
+        T(c\mathbf{u}) &= cT(\mathbf{u})
+    \end{align*}
+
+    Any linear transformation must transform the zero vector to the zero vector. 
+    The set of vectors in $U$ that are mapped into the zero vector of $V$ is called the kernel of $T$,
+    denoted ker($T$) or null($T$).
+    The set of vectors in $V$ that are images of vectors in $U$ is called the range of $T$,
+    denoted range($T$). 
+    The kernel is a subspace of $U$ and the range is a subspace of $V$.
+    For the transformation $T(x,y,z) = (x,y,0)$,
+    the kernel is expressed as 
+    \[
+    \text{ker}(T) = \{(0,0,z)\},
+    \]
+    and the range is expressed as
+    \[
+    \text{range}(T) = \{(x,y,0)\}.
+    \]
+
+    For a matrix transformation, the range of $T$ is spanned by the columns vectors of the matrix.
+    The kernel of a matrix transformation can be found by solving the homogeneous system of equations $AX = \mathbf{0}$,
+    and the kernel is the set of solutions to this system. 
+    This may be expressed like this: $\text{ker}(T) = \{(-5r, r, r)\}$.
+    Transposing the transformation matrix and finding the reduced row echelon form gives the basis for the range. 
+    This may be expressed like this: $\text{range}(T) = \{(s, t, s + t)\}$.
+
+    For a matrix transformation,
+    the sum of the dimensions of the kernel and the range is equal to the dimension of the transformation matrix.
+    Furthermore, the sum of the rank and the dimension of the kernel is equal to the dimension of the transformation matrix.
+
+    The four subspaces rows($A$), null($A$), col($A$), and null($A^T$) 
+    are the fundamental subspaces of the transformation matrix $A$.
+    The orthogonal complement of the row space is the null space of $A$,
+    and the orthogonal complement of the column space is the null space of $A^T$.
+    
 
 
 
