@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage[parfill]{parskip}
 
 \newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
@@ -529,7 +530,6 @@
     They also have eigenvectors that represent the long-term population distribution
     and eigenvalues that represent the long-term growth rate.
 
-<<<<<<< HEAD
     \subsection*{5.3}
     $B$ is similar to $A$ if there exists an invertible matrix $C$
     such that $B = C^{-1}AC$.
@@ -542,7 +542,6 @@
         This diagonal elements of $D$ will be the eigenvalues of $A$.
         \item If $A$ is diagonizable, then it has $n$ linearly independent eigenvectors.
     \end{enumerate}
-
 
     Let
     \[
@@ -582,7 +581,6 @@
         \item The eigenspaces of $A$ are orthogonal. 
     \end{enumerate}
 
-=======
     \subsection*{4.1}
     A vector space is a set $V$ of elements called vectors,
     having operations of addition and scalar multiplication
@@ -657,6 +655,40 @@
     
     The dimension of matrix vector space $M_{mn}$ is $mn$,
     and the dimension of a polynomial vector space $P_n$ is $n + 1$.
+
+    \subsection*{4.5}
+    Let $A$ be a $m \times n$ matrix. 
+    The row vectors contain $n$ components and span a subpace of $\mathbb{R}^n$ called the row space of $A$,
+    denoted row($A$). 
+    Likewise, the column vectors contain $m$ components and span a subspace of $\mathbb{R}^m$ called the column space of $A$, 
+    denoted col($A$).
+    The row space and the column space have the same dimension, 
+    and this number is called the rank of $A$, denoted rank($A$).
     
+    The nonzero row vectors of $A$ in reduced echelon form form a basis for the row space of $A$,
+    and the rank of $A$ is equal to the number of nonzero rows in the reduced echelon form of $A$.
+    The column space of $A$ becomes the row space of $A^T$ and vice versa. 
+    A set of vectors that span a subspace can be written as row vectors of a matrix, 
+    and the nonzero row vectors of the reduced echelon form of this matrix form a basis for the subspace.
+
+    Consider a system $AX = B$ of $m$ linear equations in $n$ variables. 
+    \begin{enumerate}
+        \item If the augmented matrix and the matrix of coefficients have the same rank $r$
+        and $r = n$, the solution is unique.
+        \item If the augmented matrix and the matrix of coefficients have the same rank $r$
+        and $r < n$, there are many solutions. 
+        \item If the augmented matrix and the matrix of coefficients do not have the same rank,
+        ther are no solutions. 
+    \end{enumerate}
+
+    If $A$ is nonsingular, then 
+    \begin{enumerate}
+        \item $AX = B$ has a unique solution.
+        \item rank($A$) = $n$.
+        \item The column vectors of $A$ form a basis for $\mathbb{R}^n$.
+    \end{enumerate}
+
+
+
 
 \end{document}
