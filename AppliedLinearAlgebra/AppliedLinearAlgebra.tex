@@ -572,7 +572,25 @@
 
     Any set of vectors from a vector space generate (span) a subspace.
     A vector can be shown to be in this subspace if it is a linear combination of the vectors spannig the subspace.
+
+    \subsection*{4.3}
+    Linear independence can be applied to any vector space.
+    For example, 
+    the set $\{x^2 + 1, 3x - 1, -4x +  1\}$ is linearly independent in $P_2$ 
+    because 
+    \begin{align*}
+        c_1(x^2 + 1) + c_2(3x - 1) + c_3(-4x + 1) &= 0 \\
+        (c_1)x^2 + (3c_2 - 4c_3)x + (c_1 - c_2 + c_3) &= 0,
+    \end{align*}
+    yielding the system of equations
+    \begin{align*}
+        c_1 &= 0 \\
+        3c_2 - 4c_3 &= 0 \\
+        c_1 - c_2 + c_3 &= 0,
+    \end{align*}
+    which has the only solution $c_1 = c_2 = c_3 = 0$.
+
+    A set consisting of two or more vectors is linearly dependent if and only if  
+    it is possible to express one of the vectors as a linear combination of the other vectors.
     
-
-
 \end{document} 
