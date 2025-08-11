@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage[parfill]{parskip}
 
 \newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
@@ -542,7 +543,10 @@
         \item If $A$ is diagonizable, then it has $n$ linearly independent eigenvectors.
     \end{enumerate}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> de403ae46570b7ffe2e3431e8eb9af5eb4e12c10
     Let
     \[
     A = 
@@ -581,8 +585,11 @@
         \item The eigenspaces of $A$ are orthogonal. 
     \end{enumerate}
 
+<<<<<<< HEAD
     \section*{4}
     
+=======
+>>>>>>> de403ae46570b7ffe2e3431e8eb9af5eb4e12c10
     \subsection*{4.1}
     A vector space is a set $V$ of elements called vectors,
     having operations of addition and scalar multiplication
@@ -629,5 +636,144 @@
     Any set of vectors from a vector space generate (span) a subspace.
     A vector can be shown to be in this subspace if it is a linear combination of the vectors spannig the subspace.
 
+    \subsection*{4.3}
+    Linear independence can be applied to any vector space.
+    For example, 
+    the set $\{x^2 + 1, 3x - 1, -4x +  1\}$ is linearly independent in $P_2$ 
+    because 
+    \begin{align*}
+        c_1(x^2 + 1) + c_2(3x - 1) + c_3(-4x + 1) &= 0 \\
+        (c_1)x^2 + (3c_2 - 4c_3)x + (c_1 - c_2 + c_3) &= 0,
+    \end{align*}
+    yielding the system of equations
+    \begin{align*}
+        c_1 &= 0 \\
+        3c_2 - 4c_3 &= 0 \\
+        c_1 - c_2 + c_3 &= 0,
+    \end{align*}
+    which has the only solution $c_1 = c_2 = c_3 = 0$.
 
-\end{document} 
+    A set consisting of two or more vectors is linearly dependent if and only if  
+    it is possible to express one of the vectors as a linear combination of the other vectors.
+
+    \subsection*{4.4}
+    A finite set of vectors $\{\mathbf{v_1, \dots, v_n}\}$ is called a basis for a vector space $V$ 
+    if the set spans $V$ and is linearly independent.
+    All bases for a vector space are equal in size.
+    The origin is considered a valid subspace for any vector space.
+    
+    The dimension of matrix vector space $M_{mn}$ is $mn$,
+    and the dimension of a polynomial vector space $P_n$ is $n + 1$.
+
+    \subsection*{4.5}
+    Let $A$ be a $m \times n$ matrix. 
+    The row vectors contain $n$ components and span a subpace of $\mathbb{R}^n$ called the row space of $A$,
+    denoted row($A$). 
+    Likewise, the column vectors contain $m$ components and span a subspace of $\mathbb{R}^m$ called the column space of $A$, 
+    denoted col($A$).
+    The row space and the column space have the same dimension, 
+    and this number is called the rank of $A$, denoted rank($A$).
+    
+    The nonzero row vectors of $A$ in reduced echelon form form a basis for the row space of $A$,
+    and the rank of $A$ is equal to the number of nonzero rows in the reduced echelon form of $A$.
+    The column space of $A$ becomes the row space of $A^T$ and vice versa. 
+    A set of vectors that span a subspace can be written as row vectors of a matrix, 
+    and the nonzero row vectors of the reduced echelon form of this matrix form a basis for the subspace.
+
+    Consider a system $AX = B$ of $m$ linear equations in $n$ variables. 
+    \begin{enumerate}
+        \item If the augmented matrix and the matrix of coefficients have the same rank $r$
+        and $r = n$, the solution is unique.
+        \item If the augmented matrix and the matrix of coefficients have the same rank $r$
+        and $r < n$, there are many solutions. 
+        \item If the augmented matrix and the matrix of coefficients do not have the same rank,
+        ther are no solutions. 
+    \end{enumerate}
+
+    If $A$ is nonsingular, then 
+    \begin{enumerate}
+        \item $AX = B$ has a unique solution.
+        \item rank($A$) = $n$.
+        \item The column vectors of $A$ form a basis for $\mathbb{R}^n$.
+    \end{enumerate}
+
+    \subsection*{4.8}
+    Let $U$ and $V$ be vector spaces. Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $U$ 
+    and let $c$ be a scalar. A transformation $T: U \rightarrow V$ is said to be linear if 
+    \begin{align*}
+        T(\mathbf{u} + \mathbf{v}) &= T(\mathbf{u}) + T(\mathbf{v}) \\
+        T(c\mathbf{u}) &= cT(\mathbf{u})
+    \end{align*}
+
+    Any linear transformation must transform the zero vector to the zero vector. 
+    The set of vectors in $U$ that are mapped into the zero vector of $V$ is called the kernel of $T$,
+    denoted ker($T$) or null($T$).
+    The set of vectors in $V$ that are images of vectors in $U$ is called the range of $T$,
+    denoted range($T$). 
+    The kernel is a subspace of $U$ and the range is a subspace of $V$.
+    For the transformation $T(x,y,z) = (x,y,0)$,
+    the kernel is expressed as 
+    \[
+    \text{ker}(T) = \{(0,0,z)\},
+    \]
+    and the range is expressed as
+    \[
+    \text{range}(T) = \{(x,y,0)\}.
+    \]
+
+    For a matrix transformation, the range of $T$ is spanned by the columns vectors of the matrix.
+    The kernel of a matrix transformation can be found by solving the homogeneous system of equations $AX = \mathbf{0}$,
+    and the kernel is the set of solutions to this system. 
+    This may be expressed like this: $\text{ker}(T) = \{(-5r, r, r)\}$.
+    Transposing the transformation matrix and finding the reduced row echelon form gives the basis for the range. 
+    This may be expressed like this: $\text{range}(T) = \{(s, t, s + t)\}$.
+
+    For a matrix transformation with $n$ columns,
+    \[
+    \text{dim(ker}(T)) + \text{dim(range}(T)) = n,
+    \]
+    Furthermore,
+    \[
+    \text{dim(ker}(T)) + \text{rank}(T) = n,
+    \]
+
+    The four subspaces rows($A$), null($A$), col($A$), and null($A^T$) 
+    are the fundamental subspaces of the transformation matrix $A$.
+    The orthogonal complement of the row space is the null space of $A$,
+    and the orthogonal complement of the column space is the null space of $A^T$.
+
+    \subsection*{4.9}
+    A transformation $T$ is said to be one-to-one if each element in the range 
+    is the image of just one element in the domain.
+    This implies that the transformation is invertible and that 
+    \[
+    T(\mathbf{u}) = T(\mathbf{v}) \implies \mathbf{u} = \mathbf{v}
+    \]
+
+    A linear transformation is one-to-one if and only if the kernel is the zero vector, and
+    a matrix transformation is one-to-one if and only if the matrix is nonsingular. 
+    For a square matrix, use the determinant to determine if the transformation is one-to-one,
+    and for a nonsingular matrix, use the rank/nullity theorem to determine if the transformation is one-to-one.
+    If the dimension of the kernel is not zero, the transformation is not one-to-one and vice versa.
+    One-to-one linear transformations preserve linear independence.
+
+    For a invertible linear transformation $T$,
+    \begin{enumerate}
+        \item ker($T$) = $\{0\}$
+        \item range($T$) = $\mathbb{R}^n$
+        \item $T^{-1}$ is linear.
+    \end{enumerate} 
+
+    \subsection*{4.10}
+    The set of solutions to a transformation $T(\mathbf{x}) = \mathbf{y}$ can also be expressed
+    as the set of vectors mapped by $T$ into $\mathbf{y}$. 
+    If $\mathbf{y}$ is not in the range of $T$, then the system has no solutions.
+    Therefore, for a homogeneous system of linear equations,
+    the set of solutions is the kernel of the transformation and forms a subspace.
+    However, the set of solutions to a nonhomogeneous system of linear equations is not a subspace.
+    For both types of systems, a different solution can be found by adding a multiple of the kernel to the solution.
+    A general soltuion is then the kernel plus a specific solution.
+    
+
+
+\end{document}
