@@ -1,0 +1,120 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+% Define colors
+\definecolor{headingcolor}{RGB}{0, 51, 102}
+\definecolor{subheadingcolor}{RGB}{70, 130, 180}
+\definecolor{accentcolor}{RGB}{70, 130, 180}
+
+% Custom section command
+\titleformat{\section}
+  {\large\bfseries\color{headingcolor}\uppercase}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1.2}{*0.4}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\name}[1]{
+  \begin{center}
+    \Huge\textbf{\color{headingcolor}#1}
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.8pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\contact}[3]{
+  \begin{center}
+    \faEnvelope\ #1 \hspace{1em} \faPhone\ #2 \hspace{1em} \faMapMarker*\ #3
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+} 
+\newcommand{\role}[4]{
+  \textbf{\color{subheadingcolor}#1} \hfill \textbf{#2} \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+\name{Joe H Hollander}
+\vspace{-0.25em}
+\contact{joe.h.hollander@gmail.com}{(802) 233-0910}{185 Rye Circle, South Burlington, VT 05403}
+
+\vspace{-0.25em}
+\begin{center}
+\textit{Enthusiastic and reliable high school student who enjoys working with others, creating positive experiences, and delivering excellent customer service. Always timely, responsible, and motivated to bring energy and a smile to the workplace.}
+\end{center}
+
+\vspace{2em}
+\section{EXPERIENCE}
+\vspace{0.5em}
+
+\begin{flushleft}
+  \textbf{\color{subheadingcolor}DUAL ENROLLMENT AMBASSADOR — University of Vermont}
+  \begin{itemize}[leftmargin=*,nosep,itemsep=3pt]
+      \item Marketed UVM's dual enrollment program to prospective students through TikTok and in-person events.
+      \item Achieved \textbf{over 1.5 million} views and \textbf{2,900} likes on TikTok.
+      \item Coordinated and led on-site promotional activities at South Burlington High School.
+  \end{itemize}
+\end{flushleft}
+
+\begin{flushleft}
+  \textbf{\color{subheadingcolor}FRONT DESK STAFF — Farpost Soccer Club}
+  \begin{itemize}[leftmargin=*,nosep,itemsep=3pt]
+      \item Welcomed players, families, and guests with a positive attitude.
+      \item Managed scheduling, inventory, and cleaning to ensure smooth day-to-day operations. 
+      \item Dealt with inquiries, concerns, and feedback from players and parents.
+      \item Supported coaches and referees.
+  \end{itemize}
+\end{flushleft}
+
+\begin{flushleft}
+  \textbf{\color{subheadingcolor}SOCCER REFEREE — Vermont Soccer Association}
+  \begin{itemize}[leftmargin=*,nosep,itemsep=3pt]
+      \item Refereed over \textbf{350} hours of soccer games (U10–U19), ensuring fairness and respect on the field. 
+      \item Resolved conflicts calmly and professionally while maintaining a fun, safe atmosphere. 
+      \item Demonstrated responsibility and punctuality at all scheduled games. 
+  \end{itemize}
+\end{flushleft}
+
+\vspace{2em}
+\section{SKILLS}
+\vspace{0.5em}
+\begin{itemize}[leftmargin=*,nosep,itemsep=5pt]
+  \item \textbf{Customer Service:} Friendly, Conflict Resolution, Problem Solving 
+  \item \textbf{Teamwork:} Leadership, Collaboration, Communication 
+  \item \textbf{Responsibility:} Punctuality, Reliability, Organization
+  \item \textbf{Administrative:} Scheduling, Inventory
+\end{itemize}
+
+\vspace{2em}
+\section{EDUCATION}
+\vspace{0.5em}
+\role{South Burlington High School}{South Burlington, VT}{Current GPA: 3.99/4.00}{August 2022--Present}   
+
+\vspace{2em}
+\section{EXTRACURRICULAR ACTIVITIES}
+\vspace{0.5em}
+
+\begin{itemize}[leftmargin=*,nosep,itemsep=5pt]
+  \item Math League Champions (2022–2025), Captain (2025)
+  \item Ping Pong Club President (2024–2025)
+  \item Varsity Soccer (2024-25)
+  \item Varsity Ultimate Frisbee (2024–2025)
+  \item Club Soccer (2017–2025), Captain (2025)
+  \item Math Tutoring ($\sim$35 hours)
+\end{itemize}
+
+\end{document}
