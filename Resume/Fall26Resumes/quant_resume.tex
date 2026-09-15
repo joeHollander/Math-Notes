@@ -1,0 +1,149 @@
+\documentclass[letterpaper,10pt]{article}
+
+% ---------- packages ----------
+\usepackage[margin=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+
+% ---------- color palette ----------
+\definecolor{accent}{HTML}{1F3A5F}   % deep navy
+\definecolor{rulecol}{HTML}{4A7BAA}  % lighter blue for rules
+\definecolor{subtle}{HTML}{555555}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=rulecol,
+  linkcolor=rulecol
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedbottom
+\raggedright
+
+% ---------- section formatting ----------
+\titleformat{\section}
+  {\normalsize\bfseries\scshape\color{accent}}
+  {}{0em}{}[\vspace{-6pt}{\color{rulecol}\rule{\textwidth}{1pt}}]
+\titlespacing{\section}{0pt}{5pt}{2pt}
+
+% ---------- helper macros ----------
+\newcommand{\entry}[2]{%
+  \noindent\makebox[\textwidth][s]{#1\hfill #2}\par\vspace{1pt}
+}
+
+\newcommand{\entrysub}[2]{%
+  \noindent\makebox[\textwidth][s]{\small\textcolor{subtle}{#1}\hfill\small\textcolor{subtle}{#2}}\par\vspace{1pt}
+}
+
+\newcommand{\coursework}[1]{%
+  \begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt,parsep=0pt,label={}]
+    \small\item[] \textbf{Relevant Coursework:} #1
+  \end{itemize}\vspace{1pt}
+}
+
+\newenvironment{bullets}
+  {\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=1pt,parsep=0pt,label=\textcolor{rulecol}{\textbullet}]\small}
+  {\end{itemize}\vspace{1pt}}
+
+\begin{document}
+
+% ======================= HEADER =======================
+\begin{center}
+  {\LARGE\bfseries\color{accent} Joe Hollander}\\[4pt]
+  \small
+  \href{mailto:jhh2209@columbia.edu}{jhh2209@columbia.edu} \;\textcolor{rulecol}{\textbullet}\;
+  (802) 233-0910 \;\textcolor{rulecol}{\textbullet}\;
+  \href{https://www.linkedin.com/in/joe-hollander-46a95a333/}{LinkedIn} \;\textcolor{rulecol}{\textbullet}\;
+  \href{https://github.com/joeHollander}{GitHub}
+\end{center}
+
+\vspace{-6pt}
+
+% ======================= EDUCATION =======================
+\section{Education}
+
+\entry{\textbf{Columbia College, Columbia University}}{New York, NY}
+\entrysub{B.A. Mathematics}{Expected 2030}
+\coursework{Honors Mathematics}
+
+\vspace{2pt}
+
+\entry{\textbf{South Burlington High School}}{South Burlington, VT}
+\entrysub{GPA: \textbf{3.99}/4.0 \quad SAT: \textbf{1540} \quad PSAT: \textbf{1520}/1520 (perfect)}{2022--2026}
+\coursework{AP Calculus BC (\textbf{5}); Calculus III (Multivariable) and Applied Linear Algebra, taken through dual enrollment at the University of Vermont}
+
+% ======================= AWARDS =======================
+\section{Awards \& Competitions}
+\begin{bullets}
+  \item \textbf{Vermont State Math League Champion}, \textbf{four consecutive years} --- undefeated as team captain in 2026
+  \item \textbf{2nd place individual}, Vermont State Math League; \textbf{1st place}, Advanced Math division
+  \item \textbf{1st place statewide}, University of Vermont High School Prize Examination
+  \item \textbf{ARML invitee} --- one of \textbf{16 students statewide} selected for Vermont's team
+\end{bullets}
+
+% ======================= RESEARCH =======================
+\section{Research}
+
+\entry{\textbf{Gold Futures and Leveraged-ETF Replication} \normalfont{\color{subtle}--- independent research paper}}{}
+\begin{bullets}
+  \item Tested whether futures portfolios track spot gold and leveraged ETFs better than the ETFs track their own benchmarks
+  \item Built \textbf{continuous futures series} from raw CME data: decoded ticker conventions, implemented two roll methodologies, back-adjusted for splicing, and validated against an independent reference
+  \item Solved optimal replicating portfolios as a \textbf{constrained quadratic program} (\texttt{cvxpy}); several beat \textbf{GLD's own out-of-sample tracking error}
+  \item Found \textbf{statistically significant} leverage deviations in \textbf{2 of 4} ETFs via t-tests on regression slope and daily tracking bias
+\end{bullets}
+
+% ======================= PROJECTS =======================
+\section{Projects}
+
+\entry{\textbf{Options Volatility and Flow Analysis}}{}
+\begin{bullets}
+  \item Replicated the \textbf{CBOE VIX methodology} end-to-end on AAPL options, including put-call parity forward extraction and cubic-spline interpolation of Treasury rates
+  \item Priced options via \textbf{Black-Scholes} and \textbf{Cox-Ross-Rubinstein} and \textbf{Leisen-Reimer} trees; solved implied volatility with Newton-Raphson and analytic vega; built an options-flow signal by moneyness and expiry
+\end{bullets}
+
+\entry{\textbf{Systematic Strategy Backtesting}}{}
+\begin{bullets}
+  \item Backtested mean-reversion and volatility-breakout equity strategies on \textbf{NautilusTrader}, an event-driven engine
+  \item Built custom serializable data types and a producer/consumer architecture separating signal from execution; handled warm-up periods and notional-capped sizing
+\end{bullets}
+
+\entry{\textbf{Real-Time Market Data Service}}{}
+\begin{bullets}
+  \item Containerized a \textbf{FastAPI} service streaming multi-exchange order-book data into \textbf{ArcticDB}, a versioned time-series database
+  \item Computed a \textbf{cost-based VWAP} walking book levels with partial-fill interpolation to estimate execution price at a target notional
+\end{bullets}
+
+\entry{\textbf{Machine Learning Competitions}}{}
+\begin{bullets}
+  \item \textbf{Top 25\% of 3,000+} entrants, Kaggle Podcast Listening Time; also competed in the National HS Data Challenge
+  \item Applied cyclical encoding, validated model-based imputation, and \textbf{leakage-safe target encoding} via nested cross-validation
+\end{bullets}
+
+% ======================= SKILLS =======================
+\section{Skills}
+\begin{bullets}
+  \item \textbf{Languages \& Tools:} Python 3, \LaTeX{}, Git, Docker
+  \item \textbf{Scientific Computing \& ML:} NumPy, pandas, SciPy, statsmodels, cvxpy, Matplotlib, scikit-learn, XGBoost, LightGBM
+  \item \textbf{Quant \& Data Infrastructure:} NautilusTrader, ArcticDB, FastAPI, asyncio, ccxt, Databento
+\end{bullets}
+
+% ======================= ACTIVITIES =======================
+\section{Activities}
+
+\entry{\textbf{Soccer Referee} \normalfont{\color{subtle}--- Vermont Soccer Association}}{}
+\begin{bullets}
+  \item \textbf{600+ hours} officiating, center refereeing through the \textbf{U19} level; selected as a \textbf{State Cup referee}
+  \item Demands split-second judgment under pressure, sustained focus, and conviction in a call under scrutiny
+\end{bullets}
+
+\vspace{1pt}
+\begin{bullets}
+  \item Math League \textbf{Team Captain}; Math Tutoring; Ping Pong Club \textbf{President}; Varsity Ultimate Frisbee; Varsity and Club Soccer, \textbf{Captain}
+\end{bullets}
+
+\end{document}
