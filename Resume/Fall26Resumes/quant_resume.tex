@@ -93,8 +93,9 @@
 \begin{bullets}
   \item Tested whether futures portfolios track spot gold and leveraged ETFs better than the ETFs track their own benchmarks
   \item Built continuous futures series from raw CME data: decoded ticker conventions, implemented two roll methodologies, back-adjusted for splicing, and validated against an independent reference
-  \item Solved optimal replicating portfolios as a \textbf{constrained quadratic program} (\texttt{cvxpy}); several beat \textbf{GLD's own out-of-sample tracking error}
+  \item Solved optimal replicating portfolios as a constrained quadratic program (\texttt{cvxpy}); several beat \textbf{GLD's own out-of-sample tracking error}
   \item Found \textbf{statistically significant} leverage deviations in \textbf{2 of 4} ETFs via t-tests on regression slope and daily tracking bias
+  \item Created a dynamic (daily-rebalanced) replication strategy using real EFFR date; analyzed regime-dependence (especially volatility) of tracking error and leverage deviation
   \item Produced draft of findings using \LaTeX{} and \texttt{matplotlib}, including a variety of visualizations and tables
 \end{bullets}
 
@@ -103,26 +104,23 @@
 
 \entry{\textbf{Options Volatility and Flow Analysis}}{}
 \begin{bullets}
-  \item Replicated the \textbf{CBOE VIX methodology} end-to-end on AAPL options, including put-call parity forward extraction and cubic-spline interpolation of Treasury rates
-  \item Priced options via \textbf{Black-Scholes} and \textbf{Cox-Ross-Rubinstein} and \textbf{Leisen-Reimer} trees; solved implied volatility with Newton-Raphson and analytic vega; built an options-flow signal by moneyness and expiry
-\end{bullets}
-
-\entry{\textbf{Systematic Strategy Backtesting}}{}
-\begin{bullets}
-  \item Backtested mean-reversion and volatility-breakout equity strategies on \textbf{NautilusTrader}, an event-driven engine
-  \item Built custom serializable data types and a producer/consumer architecture separating signal from execution; handled warm-up periods and notional-capped sizing
-\end{bullets}
-
-\entry{\textbf{Real-Time Market Data Service}}{}
-\begin{bullets}
-  \item Containerized a \textbf{FastAPI} service streaming multi-exchange order-book data into \textbf{ArcticDB}, a versioned time-series database
-  \item Computed a \textbf{cost-based VWAP} walking book levels with partial-fill interpolation to estimate execution price at a target notional
+  \item Replicated the CBOE VIX methodology from white paper end-to-end on AAPL options, including put-call parity forward extraction and cubic-spline interpolation of Treasury rates
+  \item Priced options via various methods (Black-Scholes, Cox-Ross-Rubinstein, Leisen-Reimer); solved implied volatility with Newton-Raphson and analytic vega; 
+  \item Engineered signals from open-interest concentration and bid/ask-size imbalance across moneyness and time-to-expiration to visualize option flow pressures relative to price action.
 \end{bullets}
 
 \entry{\textbf{Machine Learning Competitions}}{}
 \begin{bullets}
-  \item \textbf{Top 25\% of 3,000+} entrants, Kaggle Podcast Listening Time; also competed in the National HS Data Challenge
-  \item Applied cyclical encoding, validated model-based imputation, and \textbf{leakage-safe target encoding} via nested cross-validation
+  \item \textbf{Top 25\%} of 3000+ entrants, Kaggle Podcast Listening Time; also competed in the National HS Data Challenge
+  \item Applied cyclical encoding, validated model-based imputation, and leakage-safe target encoding via nested cross-validation
+  \item Implemented model-based (XGBoost) imputation for missing fields and brute-force feature combination
+  \item Designed a leakage-safe nested K-fold target-encoding scheme (mean/quantile/histogram target statistics) for categorical predictors
+\end{bullets}
+
+\entry{\textbf{Crypto Tick Data Analysis}}{}
+\begin{bullets}
+  \item Containerized a FastAPI service streaming multi-exchange order-book data into ArcticDB
+  \item Computed a cost-based VWAP walking book levels with partial-fill interpolation to estimate execution price at a target notional
 \end{bullets}
 
 % ======================= SKILLS =======================
