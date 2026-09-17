@@ -40,6 +40,12 @@
   \noindent\makebox[\textwidth][s]{\small\textcolor{subtle}{#1}\hfill\small\textcolor{subtle}{#2}}\par\vspace{1pt}
 }
 
+\newcommand{\ongoingCoursework}[1]{%
+  \begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt,parsep=0pt,label={}]
+    \small\item[] \textbf{Relevant Ongoing Coursework:} #1
+  \end{itemize}\vspace{1pt}
+}
+
 \newcommand{\coursework}[1]{%
   \begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt,parsep=0pt,label={}]
     \small\item[] \textbf{Relevant Coursework:} #1
@@ -69,13 +75,13 @@
 
 \entry{\textbf{Columbia College, Columbia University}}{New York, NY}
 \entrysub{B.A. Mathematics}{Expected 2030}
-\coursework{Honors Mathematics}
+\ongoingCoursework{Honors Mathematics}
 
 \vspace{2pt}
 
 \entry{\textbf{South Burlington High School}}{South Burlington, VT}
 \entrysub{GPA: 3.99/4.0 \quad SAT: 1580 \quad PSAT: 1520/1520}{2022--2026}
-\coursework{AP Calculus BC (5); AP Statistics (5); Calculus III (Multivariable) and Applied Linear Algebra, taken through dual enrollment at the University of Vermont}
+\coursework{AP Calculus BC (5); AP Statistics (5); Calculus III and Applied Linear Algebra (UVM Dual Enrollment)}
 
 % ======================= AWARDS =======================
 \section{Awards \& Competitions}
@@ -92,7 +98,7 @@
 \entry{\textbf{Gold Futures and Leveraged-ETF Replication} \normalfont{\color{subtle}--- independent research paper: \href{https://github.com/joeHollander/ETF-Research/blob/588ff2050108d66b7d41e6ad99f96e83b555e057/Paper/paper.pdf}{rough draft} \;\textcolor{rulecol}{\textbullet}\ }}{}
 \begin{bullets}
   \item Tested whether futures portfolios track spot gold and leveraged ETFs better than the ETFs track their own benchmarks
-  \item Built continuous futures series from raw CME data: decoded ticker conventions, implemented two roll methodologies, back-adjusted for splicing, and validated against an independent reference
+  \item Built continuous futures series from raw CME data, implemented two roll methodologies (time and volume based), back-adjusted for splicing, and validated against an independent reference
   \item Solved optimal replicating portfolios as a constrained quadratic program (\texttt{cvxpy}); several beat \textbf{GLD's own out-of-sample tracking error}
   \item Found \textbf{statistically significant} leverage deviations in \textbf{2 of 4} ETFs via t-tests on regression slope and daily tracking bias
   \item Created a dynamic (daily-rebalanced) replication strategy using real EFFR date; analyzed regime-dependence (especially volatility) of tracking error and leverage deviation
@@ -111,7 +117,7 @@
 
 \entry{\textbf{Machine Learning Competitions}}{}
 \begin{bullets}
-  \item \textbf{Top 25\%} of 3000+ entrants, Kaggle Podcast Listening Time; also competed in the National HS Data Challenge
+  \item \textbf{Top 25\%} of 3000+ entrants, Kaggle Podcast Listening Time
   \item Applied cyclical encoding, validated model-based imputation, and leakage-safe target encoding via nested cross-validation
   \item Implemented model-based (XGBoost) imputation for missing fields and brute-force feature combination
   \item Designed a leakage-safe nested K-fold target-encoding scheme (mean/quantile/histogram target statistics) for categorical predictors
@@ -141,7 +147,7 @@
 \entry{\textbf{Soccer Referee} \normalfont{\color{subtle}--- Vermont Soccer Association}}{}
 \begin{bullets}
   \item \textbf{600+ hours} officiating, center refereeing through the \textbf{U19} level; selected as a \textbf{State Cup referee}
-  \item Demands split-second judgment under pressure, sustained focus, and conviction in a call under scrutiny
+  \item Demands split-second judgment under pressure, sustained focus, and conviction in a call
 \end{bullets}
 
 \end{document}
