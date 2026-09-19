@@ -10,9 +10,9 @@
 \usepackage[T1]{fontenc}
 
 % ---------- color palette ----------
-\definecolor{accent}{HTML}{1F3A5F}   % deep navy
+\definecolor{accent}{HTML}{000000}   % deep navy
 \definecolor{rulecol}{HTML}{4A7BAA}  % lighter blue for rules
-\definecolor{subtle}{HTML}{555555}
+\definecolor{subtle}{HTML}{000000}
 
 \hypersetup{
   colorlinks=true,
@@ -28,7 +28,7 @@
 % ---------- section formatting ----------
 \titleformat{\section}
   {\normalsize\bfseries\scshape\color{accent}}
-  {}{0em}{}[\vspace{-6pt}{\color{rulecol}\rule{\textwidth}{1pt}}]
+  {}{0em}{}[\vspace{-6pt}{\color{black}\rule{\textwidth}{1pt}}]
 \titlespacing{\section}{0pt}{5pt}{2pt}
 
 % ---------- helper macros ----------
@@ -53,7 +53,7 @@
 }
 
 \newenvironment{bullets}
-  {\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=1pt,parsep=0pt,label=\textcolor{rulecol}{\textbullet}]\small}
+  {\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=1pt,parsep=0pt,label=\textcolor{black}{\textbullet}]\small}
   {\end{itemize}\vspace{1pt}}
 
 \begin{document}
@@ -62,9 +62,10 @@
 \begin{center}
   {\LARGE\bfseries\color{accent} Joe Hollander}\\[4pt]
   \small
-  \href{mailto:jhh2209@columbia.edu}{jhh2209@columbia.edu} \;\textcolor{rulecol}{\textbullet}\;
-  (802) 233-0910 \;\textcolor{rulecol}{\textbullet}\;
-  \href{https://www.linkedin.com/in/joe-hollander-46a95a333/}{LinkedIn} \;\textcolor{rulecol}{\textbullet}\;
+  70 Morningside Drive, New York, NY \;\textcolor{black}{\textbullet}\;
+  \href{mailto:jhh2209@columbia.edu}{jhh2209@columbia.edu} \;\textcolor{black}{\textbullet}\;
+  (802) 233-0910 \;\textcolor{black}{\textbullet}\;
+  \href{https://www.linkedin.com/in/joe-hollander-46a95a333/}{LinkedIn} \;\textcolor{black}{\textbullet}\;
   \href{https://github.com/joeHollander}{GitHub}
 \end{center}
 
@@ -95,38 +96,36 @@
 % ======================= RESEARCH =======================
 \section{Research}
 
-\entry{\textbf{Gold Futures and Leveraged-ETF Replication} \normalfont{\color{subtle}--- independent research paper: \href{https://github.com/joeHollander/ETF-Research/blob/588ff2050108d66b7d41e6ad99f96e83b555e057/Paper/paper.pdf}{rough draft} \;\textcolor{rulecol}{\textbullet}\ }}{}
+\entry{\textbf{Gold Futures and Leveraged-ETF Replication} \normalfont{\color{subtle}--- independent research paper: \href{https://github.com/joeHollander/ETF-Research/blob/588ff2050108d66b7d41e6ad99f96e83b555e057/Paper/paper.pdf}{rough draft} \;\textcolor{black}{\textbullet}\ }}{}
 \begin{bullets}
   \item Tested whether futures portfolios track spot gold and leveraged ETFs better than the ETFs track their own benchmarks
-  \item Built continuous futures series from raw CME data, implemented two roll methodologies (time and volume based), back-adjusted for splicing, and validated against an independent reference
-  \item Solved optimal replicating portfolios as a constrained quadratic program (\texttt{cvxpy}); several beat \textbf{GLD's own out-of-sample tracking error}
-  \item Found \textbf{statistically significant} leverage deviations in \textbf{2 of 4} ETFs via t-tests on regression slope and daily tracking bias
-  \item Created a dynamic (daily-rebalanced) replication strategy using real EFFR date; analyzed regime-dependence (especially volatility) of tracking error and leverage deviation
+  \item Built continuous futures series from raw Databento data, implemented fixed-expiry roll with volume checks, back-adjustments, and validated against an independent reference
+  \item Determined optimal replication portfolios as a constrained quadratic program (\texttt{cvxpy}) and several \textbf{beat} GLD's own out-of-sample tracking error
+  \item Created a dynamic (daily-rebalanced) replication strategy using EFFR data and analyzed regime-dependence (especially volatility) of tracking error and leverage deviation
   \item Produced draft of findings using \LaTeX{} and \texttt{matplotlib}, including a variety of visualizations and tables
 \end{bullets}
 
 % ======================= PROJECTS =======================
-\section{Projects}
+\section{Projects}    
 
 \entry{\textbf{Options Volatility and Flow Analysis}}{}
 \begin{bullets}
-  \item Replicated the CBOE VIX methodology from white paper end-to-end on AAPL options, including put-call parity forward extraction and cubic-spline interpolation of Treasury rates
-  \item Priced options via various methods (Black-Scholes, Cox-Ross-Rubinstein, Leisen-Reimer); solved implied volatility with Newton-Raphson and analytic vega; 
-  \item Engineered signals from open-interest concentration and bid/ask-size imbalance across moneyness and time-to-expiration to visualize option flow pressures relative to price action.
+  \item Replicated the CBOE VIX methodology from white paper end-to-end on AAPL options, including cubic-spline interpolation of Treasury rates
+  \item Engineered signals from open-interest concentration and bid/ask-size imbalance across moneyness and time-to-expiration to visualize option flow pressures relative to price action
+  \item Priced options via various methods (Black-Scholes and tree methods) and created a program to plot performance of option strategies based on price changes
 \end{bullets}
 
 \entry{\textbf{Machine Learning Competitions}}{}
 \begin{bullets}
-  \item \textbf{Top 25\%} of 3000+ entrants, Kaggle Podcast Listening Time
-  \item Applied cyclical encoding, validated model-based imputation, and leakage-safe target encoding via nested cross-validation
-  \item Implemented model-based (XGBoost) imputation for missing fields and brute-force feature combination
-  \item Designed a leakage-safe nested K-fold target-encoding scheme (mean/quantile/histogram target statistics) for categorical predictors
+  \item \textbf{Top 25\%} of 3000+ entrants in Kaggle Podcast Listening Time
+  \item Iteratively engineered and tested features (cyclical encodings, brute-force combinations, XGBoost-based imputation for missing fields), keeping additions that improved validation performance
+  \item Designed a leakage-safe nested K-fold target-encoding scheme (mean/quantile/histogram statistics) for categorical predictors
 \end{bullets}
 
 \entry{\textbf{Crypto Tick Data Analysis}}{}
 \begin{bullets}
-  \item Containerized a FastAPI service streaming multi-exchange order-book data into ArcticDB
-  \item Computed a cost-based VWAP walking book levels with partial-fill interpolation to estimate execution price at a target notional
+  \item Containerized a tick-by-tick crypto data streaming program, streaming multi-exchange order-book data into ArcticDB
+  \item Computed a variety of asynchronous metrics (mid-price, spread, flow measures, etc.), along with partial-fill interpolation to estimate execution price at a target notional
 \end{bullets}
 
 % ======================= SKILLS =======================
@@ -146,8 +145,13 @@
 
 \entry{\textbf{Soccer Referee} \normalfont{\color{subtle}--- Vermont Soccer Association}}{}
 \begin{bullets}
-  \item \textbf{600+ hours} officiating, center refereeing through the \textbf{U19} level; selected as a \textbf{State Cup referee}
+  \item \textbf{600+ hours} officiating, center refereeing through the \textbf{U19} level and selected as a \textbf{State Cup referee}
   \item Demands split-second judgment under pressure, sustained focus, and conviction in a call
+\end{bullets}
+
+\entry{\textbf{Employee} \normalfont{\color{subtle}--- The Mill Market and Deli}}{}
+\begin{bullets}
+  \item Handled customer service and worked as a cashier, food-prep employee, and deli-worker
 \end{bullets}
 
 \end{document}
